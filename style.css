@@ -1,0 +1,223 @@
+/* =========================================
+   Harrison Arbitrage LLC - Global Styles
+   ========================================= */
+:root {
+    --bg-light: #fcfcfc;
+    --nav-bg: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --accent-gold: #b38b4d;
+    --accent-silver: #8a8d91;
+    --border-light: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    line-height: 1.6;
+    /* Subtle geometric fractal/network background pattern */
+    background-image: radial-gradient(var(--border-light) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* --- Navigation (Desktop Sticky Sidebar) --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--nav-bg);
+    border-right: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+}
+
+.brand-logo {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background-color: #f9f9f9;
+    color: var(--accent-gold);
+    border-left: 4px solid var(--accent-gold);
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    margin-left: 280px;
+    padding: 3rem;
+    max-width: 1200px;
+}
+
+.hero-banner {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
+    object-fit: cover;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; color: var(--text-primary); }
+h2 { font-size: 1.8rem; border-bottom: 2px solid var(--border-light); padding-bottom: 0.5rem; }
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- Layouts & Cards --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--nav-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border-top: 4px solid var(--accent-silver);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-top: 4px solid var(--accent-gold);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-gold);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover { background-color: #9a753e; }
+
+/* --- Forms --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   Mobile Optimization (RWD Media Queries)
+   ========================================= */
+@media screen and (max-width: 900px) {
+    /* Transform Sidebar into Top-Anchored Horizontal Swipe Menu */
+    .sidebar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
+    }
+
+    .brand-logo {
+        width: 120px;
+        margin: 0.5rem 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .nav-menu a {
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .nav-menu a:hover, .nav-menu a.active {
+        border-left: none;
+        border-bottom: 3px solid var(--accent-gold);
+    }
+
+    /* Adjust Main Content & Typography for Narrow Screens */
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    
+    /* Stack content vertically */
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
