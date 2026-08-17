@@ -129,6 +129,12 @@ p {
     margin-bottom: 1rem;
 }
 
+.responsive-img {
+  max-height: 161px; /* Restricts the vertical size */
+  height: auto;      /* Keeps the image from stretching out of proportion */
+  max-width: 100%;   /* Optional: keeps it responsive horizontally too */
+}
+
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
