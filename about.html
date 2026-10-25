@@ -1,78 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harrison Arbitrage LLC | About Us</title>
-    <!-- Favicon Link -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Harrison Arbitrage LLC</title>
+  <meta name="description" content="Learn about Harrison Arbitrage LLC's mission of Information Sovereignty—bridging boardroom leadership, IT governance, and hands-on risk management." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
 
-    <nav class="sidebar">
-        <img src="HALLC_profile_w.jpg" alt="Harrison Arbitrage LLC Logo" class="brand-logo">
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="brands.html">Brands</a>
-            <a href="about.html" class="active">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy</a>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-mark-wrap">
+          <img 
+            src="Harrison_Arbitrage_Logo_Gold.png" 
+            alt="Harrison Arbitrage LLC Logo" 
+            class="logo-img-asset"
+            data-fallback-title="Harrison Arbitrage Logo"
+            data-asset-status="NEED TO CREATE"
+          />
         </div>
-    </nav>
+        <div class="brand-text-group">
+          <span class="brand-name-main">Harrison Arbitrage</span>
+          <span class="brand-name-sub">Sovereignty // Strategy</span>
+        </div>
+      </a>
 
-    <main class="main-content">
-        <h1>About Us</h1>
-        <h2>Our Mission: Information Sovereignty</h2>
-        <p>At Harrison Arbitrage LLC, our fundamental mission is Information Sovereignty. We are a premier publishing and strategy firm bridging the historical divide separating boardroom leadership, IT governance, and hands-on risk management in the age of intelligence. By leveraging deep expertise across national security and commercial consulting, we publish works that chart the course through unprecedented technological transformations.</p>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
+        MENU [≡]
+      </button>
 
-        <h2>Current Series & Titles</h2>
-        <p>Available now on Amazon in Kindle and paperback formats.</p>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="publishing.html">Publishing</a>
+        <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
+        <a href="brands.html">Brands</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Enterprise Strategy Series -->
-        <div class="series-box">
-            <div class="series-header">
-                <h3>AI, Cybersecurity and Resilience Series</h3>
-                <a href="https://www.amazon.com/dp/B0HF5N1DVW" class="series-link" target="_blank">View Full Series on Amazon &rarr;</a>
-            </div>
-            <div class="horizontal-card-box">
-                <div class="card">
-                    <img src="TAAPM_thumb.jpg" alt="Book Cover for The AI-Augmented Project Manager" class="responsive-img">
-                    <h3>The AI-Augmented Project Manager</h3>
-                    <p>Integrating Generative AI, SecMLOps, and Cyber Resilience into PMBOK®-Aligned Delivery.</p>
-                    <a href="https://www.amazon.com/dp/B0HFHDXQCJ" class="btn" target="_blank">View on Amazon</a>
-                </div>
-                <div class="card">
-                    <img src="TADE_thumb.jpg" alt="Book Cover for The AI-Driven Enterprise" class="responsive-img">
-                    <h3>The AI-Driven Enterprise</h3>
-                    <p>Governing and Managing Cyber Risk in the Age of Intelligence.</p>
-                    <a href="https://www.amazon.com/dp/B0HFDJRMJR" class="btn" target="_blank">View on Amazon</a>
-                </div>
-            </div>
+  <!-- ==================== HERO SECTION ==================== -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-kicker">Corporate Mandate &amp; Doctrine</span>
+          <h1 class="hero-title">
+            Our Mission: <span class="gold-accent">Information Sovereignty.</span>
+          </h1>
+          <p class="hero-lead">
+            At Harrison Arbitrage LLC, our fundamental mission is Information Sovereignty. We are a premier publishing and strategy firm bridging the historical divide separating boardroom leadership, IT governance, and hands-on risk management in the age of intelligence.
+          </p>
+
+          <div class="quote-banner">
+            "Leveraging deep expertise across national security and commercial consulting to chart the course through unprecedented technological transformation."
+          </div>
+
+          <div class="btn-group">
+            <a href="publishing.html" class="btn btn-gold">Explore Published Doctrine →</a>
+            <a href="contact.html" class="btn btn-silver-outline">Connect With Leadership</a>
+          </div>
         </div>
 
-        <!-- Substrate Simulation Series -->
-        <div class="series-box">
-            <div class="series-header">
-                <h3>Substrate Simulation Series</h3>
-                <a href="https://www.amazon.com/dp/B0H9J2PXMG" class="series-link" target="_blank">View Full Series on Amazon &rarr;</a>
-            </div>
-            <div class="horizontal-card-box">
-                <div class="card">
-                    <img src="PM_thumb.jpg" alt="Book Cover for Project Mnemosyne" class="responsive-img">
-                    <h3>Project Mnemosyne</h3>
-                    <p>The foundational first entry in the Simulation Substrate series.</p>
-                    <a href="https://www.amazon.com/dp/B0H9J27B61" class="btn" target="_blank">View on Amazon</a>
-                </div>
-                <div class="card">
-                    <img src="Part_1_thumb.jpg" alt="The Labyrinth, Part 1" class="responsive-img">
-                    <h3>The Labyrinth, Part 1: the Sovereign Precipice</h3>
-                    <p>The first installment of a 14-part series that explores the human expereince.</p>
-                    <a href="https://www.amazon.com/dp/B0HF5N1DVW" class="btn" target="_blank">View on Amazon</a>
-                </div>
-            </div>
+        <div>
+          <div class="asset-frame asset-frame-16x9">
+            <img 
+              src="Harrison_Arbitrage_Light.jpg" 
+              alt="Harrison Arbitrage LLC Executive Overview"
+              data-fallback-title="Harrison Arbitrage Light Banner"
+              data-asset-status="UPLOADED ASSET"
+            />
+          </div>
+          <p style="text-align: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-silver);">
+            HARRISON ARBITRAGE LLC // STRATEGIC DOCTRINE
+          </p>
         </div>
-    </main>
+      </div>
+    </section>
+
+    <!-- ==================== THE THREE CONVERGENCE POINTS ==================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Institutional Convergence</span>
+          <h2 class="section-title">Bridging the Enterprise Divide</h2>
+          <p class="section-subtitle">
+            Modern organizations suffer when strategic vision, technical governance, and operational risk management operate in isolated silos. Harrison Arbitrage LLC unifies all three planes.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>PLANE // 01</span>
+                <span class="card-badge">Executive</span>
+              </div>
+              <h3 class="card-title">Boardroom Leadership</h3>
+              <p class="card-desc">
+                Translating emerging technological disruption into clear fiduciary oversight, capital allocation discipline, and long-horizon competitive arbitrage.
+              </p>
+            </div>
+          </article>
+
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>PLANE // 02</span>
+                <span class="card-badge-silver">Architecture</span>
+              </div>
+              <h3 class="card-title">IT &amp; AI Governance</h3>
+              <p class="card-desc">
+                Establishing structural guardrails, PMBOK®-aligned delivery standards, and SecMLOps verification pipelines capable of governing probabilistic systems at scale.
+              </p>
+            </div>
+          </article>
+
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>PLANE // 03</span>
+                <span class="card-badge">Resilience</span>
+              </div>
+              <h3 class="card-title">Hands-On Risk Management</h3>
+              <p class="card-desc">
+                Drawing on national security and commercial consulting rigor to harden critical assets, preserve data sovereignty, and institutionalize operational resilience.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DIRECT HANDOFF TO PUBLISHING & BRANDS ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Explore the Ecosystem</span>
+          <h2 class="section-title">Published Series &amp; Operating Divisions</h2>
+          <p class="section-subtitle">
+            Discover how our doctrine manifests across our published Amazon series and operating brands.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>SPOTLIGHT</span>
+                <span class="card-badge">Active Release</span>
+              </div>
+              <h3 class="card-title">The Unlearning Dilemma</h3>
+              <p class="card-desc">
+                Explore our current featured book release and interactive campaign suite examining cognitive reset and institutional resilience.
+              </p>
+            </div>
+            <a href="spotlight.html" class="link-arrow">Enter Spotlight Page →</a>
+          </article>
+
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>SERIES 01</span>
+                <span class="card-badge-silver">Enterprise</span>
+              </div>
+              <h3 class="card-title">AI, Cybersecurity &amp; Resilience</h3>
+              <p class="card-desc">
+                Featuring <em>The Unlearning Dilemma</em>, <em>The AI-Augmented Project Manager</em>, and <em>The AI-Driven Enterprise</em>.
+              </p>
+            </div>
+            <a href="series-ai-cybersecurity.html" class="link-arrow">Explore Series 01 →</a>
+          </article>
+
+          <article class="enterprise-card">
+            <div>
+              <div class="card-index">
+                <span>SERIES 02</span>
+                <span class="card-badge-silver">Speculative</span>
+              </div>
+              <h3 class="card-title">Substrate Simulation Series</h3>
+              <p class="card-desc">
+                Featuring <em>Project Mnemosyne</em> and <em>The Labyrinth, Part 1: The Sovereign Precipice</em>.
+              </p>
+            </div>
+            <a href="series-substrate-simulation.html" class="link-arrow">Explore Series 02 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
+            <div class="logo-mark-wrap">
+              <img 
+                src="Harrison_Arbitrage_Logo_Gold.png" 
+                alt="Harrison Arbitrage LLC Logo" 
+                class="logo-img-asset"
+                data-fallback-title="Harrison Arbitrage Logo"
+                data-asset-status="NEED TO CREATE"
+              />
+            </div>
+            <div class="brand-text-group">
+              <span class="brand-name-main">Harrison Arbitrage LLC</span>
+              <span class="brand-name-sub">Maryland, USA // UTC -04:00</span>
+            </div>
+          </a>
+          <p class="card-desc" style="max-width: 360px;">
+            Operating at the intersection of abstract strategy and physical manifestation. Advancing Information Sovereignty across publishing, enterprise AI, and curated collectibles.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publishing.html">Publishing Hub</a></li>
+            <li><a href="spotlight.html">Current Spotlight</a></li>
+            <li><a href="brands.html">Family of Brands</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Publishing Series</h4>
+          <ul class="footer-links">
+            <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
+            <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
+            <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
+            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Governance &amp; Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@harrisonarbitrage.com">info@harrisonarbitrage.com</a></li>
+            <li><a href="tel:4439919896">443-991-9896</a></li>
+            <li><a href="contact.html">Enterprise Inquiries</a></li>
+            <li><a href="privacy.html">Privacy &amp; Data Sovereignty</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Harrison Arbitrage LLC. All Rights Reserved.</span>
+        <span>Information Sovereignty // Strategic Publishing // Enterprise Arbitrage</span>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
