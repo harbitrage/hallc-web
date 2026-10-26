@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,6 +38,18 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
@@ -62,55 +70,75 @@
     <section class="section section-alt">
       <div class="container">
         <div class="grid-2">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SECTION // 01</span>
                 <span class="card-badge">Sovereignty</span>
               </div>
               <h3 class="card-title">1. Information Sovereignty &amp; Data Protection</h3>
-              <p class="card-desc" style="margin-bottom: 0;">
-                Harrison Arbitrage LLC is committed to the highest standards of data security and information sovereignty. When you interact with our digital publishing platforms or enterprise frameworks, we ensure your data is governed securely and treated with strict confidentiality.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc" style="margin-bottom: 0;">
+                  Harrison Arbitrage LLC is committed to the highest standards of data security and information sovereignty. When you interact with our digital publishing platforms or enterprise frameworks, we ensure your data is governed securely and treated with strict confidentiality.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SECTION // 02</span>
                 <span class="card-badge-silver">Telemetry</span>
               </div>
               <h3 class="card-title">2. Data Collection in Digital Publishing</h3>
-              <p class="card-desc" style="margin-bottom: 0;">
-                We collect minimal telemetry and necessary correspondence data strictly to improve our enterprise publishing distribution, manage our global brand family (including Harrison Collectibles and Harrison AI Agents), and fulfill requested services.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc" style="margin-bottom: 0;">
+                  We collect minimal telemetry and necessary correspondence data strictly to improve our enterprise publishing distribution, manage our global brand family (including Harrison Collectibles and Harrison AI Agents), and fulfill requested services.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SECTION // 03</span>
                 <span class="card-badge-silver">Distribution</span>
               </div>
               <h3 class="card-title">3. Third-Party Distribution</h3>
-              <p class="card-desc" style="margin-bottom: 0;">
-                Our titles are globally distributed via third-party platforms (e.g., Amazon Kindle). Any transaction or localized data captured during checkout is subject to the strict privacy governance of those respective vendors.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc" style="margin-bottom: 0;">
+                  Our titles are globally distributed via third-party platforms (e.g., Amazon Kindle). Any transaction or localized data captured during checkout is subject to the strict privacy governance of those respective vendors.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SECTION // 04</span>
                 <span class="card-badge">Compliance</span>
               </div>
               <h3 class="card-title">4. Contacting the Governance Team</h3>
-              <p class="card-desc">
-                For questions regarding our risk management framework or how we handle your digital footprint, please email us directly at <a href="mailto:info@harrisonarbitrage.com" style="color: var(--gold-champagne);">info@harrisonarbitrage.com</a>.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  For questions regarding our risk management framework or how we handle your digital footprint, please email us directly at <a href="mailto:info@harrisonarbitrage.com" style="color: var(--gold-primary);">info@harrisonarbitrage.com</a>.
+                </p>
+              </div>
             </div>
           </article>
         </div>
@@ -127,10 +155,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
