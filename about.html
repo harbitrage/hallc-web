@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,10 +38,22 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (9:16 & 1:1 SWITCHER) ==================== -->
+  <!-- ==================== HERO SECTION (9:16 Theme-Synced Visual) ==================== -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
@@ -68,61 +76,23 @@
           </div>
         </div>
 
-        <div data-media-switcher>
-          <div class="media-switcher-bar">
-            <button 
-              type="button" 
-              class="media-tab-btn active"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Dark_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // 9:16 DARK EDITION"
-            >
-              Dark 9:16
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Light_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // 9:16 LIGHT EDITION"
-            >
-              Light 9:16
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Dark.jpg"
-              data-media-ratio="1x1"
-              data-media-caption="HARRISON ARBITRAGE // 1:1 DARK EMBLEM"
-            >
-              1:1 Dark Logo
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Light.jpg"
-              data-media-ratio="1x1"
-              data-media-caption="HARRISON ARBITRAGE // 1:1 LIGHT EMBLEM"
-            >
-              1:1 Light Logo
-            </button>
-          </div>
-
-          <div class="asset-frame asset-frame-9x16 switcher-stage-frame">
+        <div>
+          <div class="asset-frame asset-frame-9x16">
             <img 
               src="Harrison_Arbitrage_Dark_9x16.jpg" 
-              alt="Harrison Arbitrage LLC Executive Overview"
-              class="switcher-stage-img"
-              data-fallback-title="Harrison Arbitrage Visual"
-              data-asset-status="UPLOADED ASSET"
+              alt="Harrison Arbitrage LLC Executive 9:16 Visual"
+              class="theme-brand-9x16"
+              data-brand="arbitrage"
+              data-fallback-title="Harrison Arbitrage 9:16 Visual"
+              data-asset-status="9:16 ASSET"
             />
           </div>
-          <p class="switcher-caption" style="text-align: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-silver);">
-            HARRISON ARBITRAGE // 9:16 DARK EDITION
+          <p 
+            class="theme-status-caption"
+            data-caption-dark="HARRISON ARBITRAGE LLC // DARK EDITION 9:16"
+            data-caption-light="HARRISON ARBITRAGE LLC // LIGHT EDITION 9:16"
+          >
+            HARRISON ARBITRAGE LLC // DARK EDITION 9:16
           </p>
         </div>
       </div>
@@ -140,42 +110,57 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PLANE // 01</span>
                 <span class="card-badge">Executive</span>
               </div>
               <h3 class="card-title">Boardroom Leadership</h3>
-              <p class="card-desc">
-                Translating emerging technological disruption into clear fiduciary oversight, capital allocation discipline, and long-horizon competitive arbitrage.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Translating emerging technological disruption into clear fiduciary oversight, capital allocation discipline, and long-horizon competitive arbitrage.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PLANE // 02</span>
                 <span class="card-badge-silver">Architecture</span>
               </div>
               <h3 class="card-title">IT &amp; AI Governance</h3>
-              <p class="card-desc">
-                Establishing structural guardrails, PMBOK®-aligned delivery standards, and SecMLOps verification pipelines capable of governing probabilistic systems at scale.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Establishing structural guardrails, PMBOK®-aligned delivery standards, and SecMLOps verification pipelines capable of governing probabilistic systems at scale.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PLANE // 03</span>
                 <span class="card-badge">Resilience</span>
               </div>
               <h3 class="card-title">Hands-On Risk Management</h3>
-              <p class="card-desc">
-                Drawing on national security and commercial consulting rigor to harden critical assets, preserve data sovereignty, and institutionalize operational resilience.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Drawing on national security and commercial consulting rigor to harden critical assets, preserve data sovereignty, and institutionalize operational resilience.
+                </p>
+              </div>
             </div>
           </article>
         </div>
@@ -194,44 +179,59 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SPOTLIGHT</span>
                 <span class="card-badge">Active Release</span>
               </div>
               <h3 class="card-title">The Unlearning Dilemma</h3>
-              <p class="card-desc">
-                Explore our current featured book release and interactive 9:16 campaign suite examining cognitive reset and institutional resilience.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Explore our current featured book release and theme-synchronized 9:16 campaign suite examining cognitive reset and institutional resilience.
+                </p>
+              </div>
             </div>
             <a href="spotlight.html" class="link-arrow">Enter Spotlight Page →</a>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES 01</span>
                 <span class="card-badge-silver">4 Volumes</span>
               </div>
               <h3 class="card-title">AI, Cybersecurity &amp; Resilience</h3>
-              <p class="card-desc">
-                Featuring <em>The Unlearning Dilemma</em>, <em>The AI-Augmented Project Manager</em>, <em>The AI-Driven Enterprise</em>, and <em>AI in the Trenches</em>.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Featuring <em>The Unlearning Dilemma</em>, <em>The AI-Augmented Project Manager</em>, <em>The AI-Driven Enterprise</em>, and <em>AI in the Trenches</em>.
+                </p>
+              </div>
             </div>
             <a href="series-ai-cybersecurity.html" class="link-arrow">Explore Series 01 →</a>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES 02</span>
                 <span class="card-badge-silver">3 Volumes</span>
               </div>
               <h3 class="card-title">Substrate Simulation Series</h3>
-              <p class="card-desc">
-                Featuring <em>Project Mnemosyne</em>, <em>The Labyrinth, Part 1: The Sovereign Precipice</em>, and <em>The Labyrinth, Part 2</em>.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Featuring <em>Project Mnemosyne</em>, <em>The Labyrinth, Part 1: The Sovereign Precipice</em>, and <em>The Labyrinth, Part 2</em>.
+                </p>
+              </div>
             </div>
             <a href="series-substrate-simulation.html" class="link-arrow">Explore Series 02 →</a>
           </article>
@@ -249,10 +249,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
