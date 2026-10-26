@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,10 +38,22 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (9:16 MOBILE-FIRST) ==================== -->
+  <!-- ==================== HERO SECTION (9:16 Theme-Reactive Visual) ==================== -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
@@ -72,13 +80,19 @@
           <div class="asset-frame asset-frame-9x16">
             <img 
               src="Harrison_Arbitrage_Dark_9x16.jpg" 
-              alt="Harrison Arbitrage Publishing 9:16 Campaign Poster"
-              data-fallback-title="Harrison Arbitrage 9:16 Poster"
-              data-asset-status="UPLOADED ASSET"
+              alt="Harrison Arbitrage Strategic Publishing 9:16 Key Art"
+              class="theme-brand-9x16"
+              data-brand="arbitrage"
+              data-fallback-title="Harrison Arbitrage 9:16 Key Art"
+              data-asset-status="9:16 ASSET"
             />
           </div>
-          <p style="text-align: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-silver);">
-            STRATEGIC PUBLISHING // 9:16 MOBILE EDITION
+          <p 
+            class="theme-status-caption"
+            data-caption-dark="STRATEGIC PUBLISHING // DARK EDITION 9:16 POSTER"
+            data-caption-light="STRATEGIC PUBLISHING // LIGHT EDITION 9:16 POSTER"
+          >
+            STRATEGIC PUBLISHING // DARK EDITION 9:16 POSTER
           </p>
         </div>
       </div>
@@ -91,42 +105,49 @@
           <span class="eyebrow">Rotating Title Spotlight</span>
           <h2 class="section-title">Current Focus: The Unlearning Dilemma</h2>
           <p class="section-subtitle">
-            Each release cycle, our publishing division spotlights a primary work shaping executive discourse. Explore the active campaign, 9:16 visual reels, and core thesis on our dedicated Spotlight page.
+            Each release cycle, our publishing division spotlights a primary work shaping executive discourse. Explore the active campaign, theme-reactive 9:16 reels, and core thesis on our dedicated Spotlight page.
           </p>
         </div>
 
-        <!-- [SPOTLIGHT SUMMARY BLOCK] -->
-        <div class="spotlight-banner">
+        <!-- [SPOTLIGHT SUMMARY BLOCK - Update when rotating the featured book] -->
+        <div class="spotlight-banner" data-collapsible-card>
           <div class="asset-frame asset-frame-book">
             <img 
               src="Unlearning_Dilemma_Cover_2x3.jpg" 
               alt="Book Cover for The Unlearning Dilemma"
-              data-fallback-title="The Unlearning Dilemma (Book Cover)"
-              data-asset-status="UPLOADED ASSET"
+              data-fallback-title="The Unlearning Dilemma"
+              data-asset-status="2:3 COVER"
             />
           </div>
 
           <div>
             <span class="card-badge">Spotlight Release // AI, Cybersecurity &amp; Resilience</span>
-            <h3 class="card-title" style="font-size: 2rem; margin-top: 14px;">
+            <h3 class="card-title" style="font-size: 1.95rem; margin-top: 14px;">
               The Unlearning Dilemma
             </h3>
-            <p class="card-desc">
-              Before an enterprise can operationalize autonomous intelligence or resilient cyber governance, leadership must systematically dismantle the legacy assumptions silently sabotaging delivery. <strong>The Unlearning Dilemma</strong> confronts the institutional friction between yesterday's best practices and tomorrow's operational reality.
-            </p>
 
-            <div class="meta-list">
-              <div class="meta-item">
-                <span class="meta-label">Series Track</span>
-                <span class="meta-value">AI, Cybersecurity &amp; Resilience</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Campaign Media</span>
-                <span class="meta-value">Dark &amp; Light 9:16 Motion + Stills</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Global Distribution</span>
-                <span class="meta-value">Amazon Kindle &amp; Paperback</span>
+            <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+              <span>Collapse Details</span> <span>[−]</span>
+            </button>
+
+            <div class="collapsible-content">
+              <p class="card-desc">
+                Before an enterprise can operationalize autonomous intelligence or resilient cyber governance, leadership must systematically dismantle the legacy assumptions silently sabotaging delivery. <strong>The Unlearning Dilemma</strong> confronts the institutional friction between yesterday's best practices and tomorrow's operational reality.
+              </p>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Series Track</span>
+                  <span class="meta-value">AI, Cybersecurity &amp; Resilience</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Campaign Media</span>
+                  <span class="meta-value">Dark &amp; Light 9:16 Reels + 9:16 Stills</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Global Distribution</span>
+                  <span class="meta-value">Amazon Kindle &amp; Paperback</span>
+                </div>
               </div>
             </div>
 
@@ -152,25 +173,32 @@
 
         <div class="grid-2">
           <!-- SERIES 01 -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES // 01</span>
-                <span class="card-badge">Enterprise Strategy &amp; Cyber Risk</span>
+                <span class="card-badge">4 Volumes // Enterprise &amp; Cyber Risk</span>
               </div>
               <h3 class="card-title">AI, Cybersecurity and Resilience Series</h3>
-              <p class="card-desc">
-                Engineered for C-suite executives, program managers, practitioners, and security architects. This series translates complex developments in Generative AI, SecMLOps, PMBOK®-aligned project delivery, and frontline execution into authoritative governance frameworks.
-              </p>
 
-              <div class="meta-list">
-                <div class="meta-item">
-                  <span class="meta-label">Published Volumes</span>
-                  <span class="meta-value">4 Volumes Available Now</span>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-label">Primary Audience</span>
-                  <span class="meta-value">Executives, CISOs, PMOs, Practitioners</span>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Engineered for C-suite executives, program managers, and security architects. This series translates complex developments in Generative AI, SecMLOps, PMBOK®-aligned project delivery, and frontline cyber defense into authoritative governance frameworks.
+                </p>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <span class="meta-label">Published Volumes</span>
+                    <span class="meta-value">4 Core Titles (Including Active Spotlight)</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Primary Audience</span>
+                    <span class="meta-value">Executives, CISOs, PMOs, Practitioners</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,25 +210,32 @@
           </article>
 
           <!-- SERIES 02 -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES // 02</span>
-                <span class="card-badge-silver">Speculative Systems &amp; Ontology</span>
+                <span class="card-badge-silver">3 Volumes // Speculative Systems</span>
               </div>
               <h3 class="card-title">Substrate Simulation Series</h3>
-              <p class="card-desc">
-                A visionary narrative and philosophical examination of synthetic reality, memory architecture, and human sovereignty. Across interconnected installments, the series probes what remains authentically human when consciousness confronts the underlying simulation substrate.
-              </p>
 
-              <div class="meta-list">
-                <div class="meta-item">
-                  <span class="meta-label">Published Volumes</span>
-                  <span class="meta-value">3 Volumes Available Now (14-Part Arc)</span>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-label">Primary Audience</span>
-                  <span class="meta-value">Systems Thinkers &amp; Speculative Fiction Readers</span>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  A visionary narrative and philosophical examination of synthetic reality, memory architecture, and human sovereignty. Across interconnected installments, the series probes what remains authentically human when consciousness confronts the underlying simulation substrate.
+                </p>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <span class="meta-label">Published Volumes</span>
+                    <span class="meta-value">Project Mnemosyne &amp; The Labyrinth (Parts 1 &amp; 2)</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Primary Audience</span>
+                    <span class="meta-value">Systems Thinkers &amp; Speculative Fiction Readers</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,15 +254,15 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Master Index</span>
-          <h2 class="section-title">Complete Title Catalog</h2>
+          <h2 class="section-title">Complete 7-Volume Title Catalog</h2>
           <p class="section-subtitle">
-            All 7 published volumes currently available worldwide in Kindle and paperback editions via Amazon.
+            All published volumes currently available worldwide in Kindle and paperback editions via Amazon.
           </p>
         </div>
 
         <div class="grid-3">
           <!-- Book 1: The Unlearning Dilemma -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AI &amp; RESILIENCE</span>
@@ -238,13 +273,18 @@
                   src="Unlearning_Dilemma_Cover_2x3.jpg" 
                   alt="Book Cover for The Unlearning Dilemma"
                   data-fallback-title="The Unlearning Dilemma"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">The Unlearning Dilemma</h3>
-              <p class="card-desc">
-                Dismantling legacy organizational mental models to achieve sovereign resilience and cognitive agility in the age of autonomous systems.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Dismantling legacy organizational mental models to achieve sovereign resilience and cognitive agility in the age of autonomous systems.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="spotlight.html" class="link-arrow">View Spotlight →</a>
@@ -253,7 +293,7 @@
           </article>
 
           <!-- Book 2: The AI-Augmented Project Manager -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AI &amp; RESILIENCE</span>
@@ -264,13 +304,18 @@
                   src="AI_Augmented_Project_Manager_Cover_2x3.jpg" 
                   alt="Book Cover for The AI-Augmented Project Manager"
                   data-fallback-title="The AI-Augmented Project Manager"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">The AI-Augmented Project Manager</h3>
-              <p class="card-desc">
-                Integrating Generative AI, SecMLOps, and Cyber Resilience into PMBOK®-Aligned Delivery.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Integrating Generative AI, SecMLOps, and Cyber Resilience into PMBOK®-Aligned Delivery.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-ai-cybersecurity.html" class="link-arrow">Series Details →</a>
@@ -279,7 +324,7 @@
           </article>
 
           <!-- Book 3: The AI-Driven Enterprise -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AI &amp; RESILIENCE</span>
@@ -290,13 +335,18 @@
                   src="AI_Driven_Enterprise_Cover_2x3.jpg" 
                   alt="Book Cover for The AI-Driven Enterprise"
                   data-fallback-title="The AI-Driven Enterprise"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">The AI-Driven Enterprise</h3>
-              <p class="card-desc">
-                Governing and Managing Cyber Risk in the Age of Intelligence.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Governing and Managing Cyber Risk in the Age of Intelligence.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-ai-cybersecurity.html" class="link-arrow">Series Details →</a>
@@ -305,7 +355,7 @@
           </article>
 
           <!-- Book 4: AI in the Trenches -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AI &amp; RESILIENCE</span>
@@ -316,13 +366,18 @@
                   src="AI_in_the_Trenches_Cover_2x3.jpg" 
                   alt="Book Cover for AI in the Trenches"
                   data-fallback-title="AI in the Trenches"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">AI in the Trenches</h3>
-              <p class="card-desc">
-                Hands-on operational execution, tactical AI deployment, and frontline cyber resilience for practitioners translating strategy into reality.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Frontline operational playbooks for deploying, defending, and auditing artificial intelligence under real-world cyber and mission constraints.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-ai-cybersecurity.html" class="link-arrow">Series Details →</a>
@@ -331,7 +386,7 @@
           </article>
 
           <!-- Book 5: Project Mnemosyne -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SUBSTRATE SERIES</span>
@@ -342,13 +397,18 @@
                   src="Project_Mnemosyne_Cover_2x3.jpg" 
                   alt="Book Cover for Project Mnemosyne"
                   data-fallback-title="Project Mnemosyne"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">Project Mnemosyne</h3>
-              <p class="card-desc">
-                The foundational first entry in the Substrate Simulation series examining memory architecture and synthetic consciousness.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  The foundational first entry in the Substrate Simulation Series examining memory architecture and synthetic consciousness.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-substrate-simulation.html" class="link-arrow">Series Details →</a>
@@ -357,24 +417,29 @@
           </article>
 
           <!-- Book 6: The Labyrinth, Part 1 -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SUBSTRATE SERIES</span>
-                <span class="card-badge-silver">Part 01 of 14</span>
+                <span class="card-badge-silver">Part 01</span>
               </div>
               <div class="asset-frame asset-frame-book">
                 <img 
                   src="The_Labyrinth_Part_1_Cover_2x3.jpg" 
                   alt="Book Cover for The Labyrinth, Part 1: The Sovereign Precipice"
                   data-fallback-title="The Labyrinth, Part 1: The Sovereign Precipice"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">The Labyrinth, Part 1: The Sovereign Precipice</h3>
-              <p class="card-desc">
-                The first installment of a 14-part series that explores the human experience at the edge of simulated architecture.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  The opening installment of the 14-part Labyrinth arc exploring the human experience at the edge of simulated architecture.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-substrate-simulation.html" class="link-arrow">Series Details →</a>
@@ -383,24 +448,29 @@
           </article>
 
           <!-- Book 7: The Labyrinth, Part 2 -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SUBSTRATE SERIES</span>
-                <span class="card-badge-silver">Part 02 of 14</span>
+                <span class="card-badge">Part 02</span>
               </div>
               <div class="asset-frame asset-frame-book">
                 <img 
                   src="The_Labyrinth_Part_2_Cover_2x3.jpg" 
                   alt="Book Cover for The Labyrinth, Part 2"
                   data-fallback-title="The Labyrinth, Part 2"
-                  data-asset-status="UPLOADED ASSET"
+                  data-asset-status="2:3 COVER"
                 />
               </div>
               <h3 class="card-title">The Labyrinth, Part 2</h3>
-              <p class="card-desc">
-                The second installment of the 14-part Labyrinth arc—descending deeper into the contested corridors of synthetic perception and human sovereignty.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  The second installment of the Labyrinth arc—descending deeper into the synthetic construct as sovereign memory and algorithmic control collide.
+                </p>
+              </div>
             </div>
             <div class="btn-group">
               <a href="series-substrate-simulation.html" class="link-arrow">Series Details →</a>
@@ -408,7 +478,7 @@
             </div>
           </article>
 
-          <!-- [ADD NEW BOOK HERE - Copy one <article class="enterprise-card"> block above and paste here when adding a new title] -->
+          <!-- [ADD NEW BOOK HERE - Copy one <article class="enterprise-card" data-collapsible-card> block above and paste here when adding a new title] -->
         </div>
       </div>
     </section>
@@ -423,10 +493,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
