@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spotlight: The Unlearning Dilemma | Harrison Arbitrage LLC</title>
-  <meta name="description" content="Featured Book Spotlight: The Unlearning Dilemma by Harrison Arbitrage LLC. Explore the executive framework, 9:16 ad campaign visuals, and Amazon release." />
+  <meta name="description" content="Featured Book Spotlight: The Unlearning Dilemma by Harrison Arbitrage LLC. Explore the executive framework, 9:16 campaign reels, and Amazon release." />
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js" defer></script>
 </head>
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,11 +38,24 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ==================== SPOTLIGHT HERO ==================== -->
   <main>
+    <!-- [ROTATING SPOTLIGHT HERO - Update text, Amazon link, and 2:3 cover filename here when rotating to your next release] -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
@@ -84,16 +93,16 @@
         </div>
 
         <div>
-          <div class="asset-frame asset-frame-book" style="max-width: 320px;">
+          <div class="asset-frame asset-frame-book" style="max-width: 310px;">
             <img 
               src="Unlearning_Dilemma_Cover_2x3.jpg" 
               alt="Book Cover for The Unlearning Dilemma"
-              data-fallback-title="The Unlearning Dilemma (2:3 Book Cover)"
-              data-asset-status="UPLOADED ASSET"
+              data-fallback-title="The Unlearning Dilemma"
+              data-asset-status="2:3 COVER"
             />
           </div>
-          <p style="text-align: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-silver);">
-            OFFICIAL EDITION // THE UNLEARNING DILEMMA
+          <p class="theme-status-caption">
+            OFFICIAL 2:3 EDITION // THE UNLEARNING DILEMMA
           </p>
         </div>
       </div>
@@ -111,126 +120,149 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>THESIS // 01</span>
                 <span class="card-badge">Cognitive Debt</span>
               </div>
               <h3 class="card-title">Diagnosing Institutional Inertia</h3>
-              <p class="card-desc">
-                Just as legacy code accumulates technical debt, leadership teams accumulate cognitive debt—relying on outdated risk checklists and linear project gates that blind them to asymmetric cyber and AI threats.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Just as legacy code accumulates technical debt, leadership teams accumulate cognitive debt—relying on outdated risk checklists and linear project gates that blind them to asymmetric cyber and AI threats.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>THESIS // 02</span>
                 <span class="card-badge-silver">Structural Reset</span>
               </div>
               <h3 class="card-title">Strategic Unlearning Protocols</h3>
-              <p class="card-desc">
-                A repeatable executive methodology for auditing, retiring, and replacing obsolete governance habits without destabilizing ongoing mission-critical delivery or compliance posture.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  A repeatable executive methodology for auditing, retiring, and replacing obsolete governance habits without destabilizing ongoing mission-critical delivery or compliance posture.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>THESIS // 03</span>
                 <span class="card-badge">Resilience</span>
               </div>
               <h3 class="card-title">Sovereign Command in the AI Era</h3>
-              <p class="card-desc">
-                How to rebuild organizational decision loops around Information Sovereignty, SecMLOps rigor, and human-on-the-loop authority across complex enterprise ecosystems.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  How to rebuild organizational decision loops around Information Sovereignty, SecMLOps rigor, and human-on-the-loop authority across complex enterprise ecosystems.
+                </p>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 9:16 MOBILE-FIRST AD CAMPAIGN SHOWCASE ==================== -->
+    <!-- ==================== THEME-REACTIVE 9:16 CAMPAIGN MEDIA SUITE ==================== -->
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">9:16 Campaign Media Suite</span>
-          <h2 class="section-title">The Unlearning Dilemma Ad Campaign</h2>
+          <span class="eyebrow">9:16 Vertical Media Architecture</span>
+          <h2 class="section-title">Theme-Synchronized Campaign Suite</h2>
           <p class="section-subtitle">
-            Toggle between our dark and light edition `9:16` animated motion reels and vertical campaign posters produced for the release.
+            Toggle the global <strong>Dark / Light Mode</strong> button in the header to automatically switch the 9:16 motion reel and 9:16 key art poster between their Dark and Light campaign editions.
           </p>
         </div>
 
-        <div class="enterprise-card" data-media-switcher>
-          <div class="media-switcher-bar">
-            <button 
-              type="button" 
-              class="media-tab-btn active"
-              data-media-type="video"
-              data-media-src="Harrison_Arbitrage_Dark_9x16_Animated.mp4"
-              data-media-ratio="9x16"
-              data-media-caption="CAMPAIGN REEL // DARK 9:16 ANIMATED (Harrison_Arbitrage_Dark_9x16_Animated.mp4)"
+        <div class="grid-2">
+          <!-- 9:16 Animated Campaign Reel -->
+          <article class="enterprise-card" data-collapsible-card>
+            <div>
+              <div class="card-index">
+                <span>CAMPAIGN REEL // 9:16 MOTION</span>
+                <span class="card-badge">Theme-Synced MP4</span>
+              </div>
+              <div class="asset-frame asset-frame-9x16">
+                <video 
+                  class="theme-brand-video"
+                  data-brand="arbitrage"
+                  src="Harrison_Arbitrage_Dark_9x16_Animated.mp4" 
+                  poster="Harrison_Arbitrage_Dark_9x16.jpg"
+                  autoplay 
+                  muted 
+                  loop 
+                  playsinline 
+                  controls
+                ></video>
+              </div>
+              <h3 class="card-title">9:16 Animated Campaign Reel</h3>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Vertical motion reel engineered for mobile-first executive feeds. Automatically switches between <code>Harrison_Arbitrage_Dark_9x16_Animated.mp4</code> and <code>Harrison_Arbitrage_Light_9x16_Animated.mp4</code>.
+                </p>
+              </div>
+            </div>
+            <p 
+              class="theme-status-caption"
+              data-caption-dark="ACTIVE FILE: Harrison_Arbitrage_Dark_9x16_Animated.mp4"
+              data-caption-light="ACTIVE FILE: Harrison_Arbitrage_Light_9x16_Animated.mp4"
             >
-              Dark 9:16 Video
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="video"
-              data-media-src="Harrison_Arbitrage_Light_9x16_Animated.mp4"
-              data-media-ratio="9x16"
-              data-media-caption="CAMPAIGN REEL // LIGHT 9:16 ANIMATED (Harrison_Arbitrage_Light_9x16_Animated.mp4)"
-            >
-              Light 9:16 Video
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Dark_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="CAMPAIGN POSTER // DARK 9:16 STILL (Harrison_Arbitrage_Dark_9x16.jpg)"
-            >
-              Dark 9:16 Still
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Light_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="CAMPAIGN POSTER // LIGHT 9:16 STILL (Harrison_Arbitrage_Light_9x16.jpg)"
-            >
-              Light 9:16 Still
-            </button>
-          </div>
+              ACTIVE FILE: Harrison_Arbitrage_Dark_9x16_Animated.mp4
+            </p>
+          </article>
 
-          <div class="asset-frame asset-frame-9x16 switcher-stage-frame" style="margin-top: 12px; margin-bottom: 18px;">
-            <img 
-              src="Harrison_Arbitrage_Dark_9x16.jpg" 
-              alt="Campaign 9:16 Visual" 
-              class="switcher-stage-img" 
-              style="display: none;"
-              data-fallback-title="Campaign 9:16 Visual"
-              data-asset-status="UPLOADED ASSET"
-            />
-            <video 
-              class="switcher-stage-video" 
-              src="Harrison_Arbitrage_Dark_9x16_Animated.mp4" 
-              autoplay 
-              muted 
-              loop 
-              playsinline 
-              controls
-            ></video>
-          </div>
-
-          <p class="switcher-caption" style="text-align: center; font-family: var(--font-mono); font-size: 0.75rem; color: var(--gold-champagne);">
-            CAMPAIGN REEL // DARK 9:16 ANIMATED (Harrison_Arbitrage_Dark_9x16_Animated.mp4)
-          </p>
+          <!-- 9:16 Static Campaign Poster -->
+          <article class="enterprise-card" data-collapsible-card>
+            <div>
+              <div class="card-index">
+                <span>CAMPAIGN POSTER // 9:16 STILL</span>
+                <span class="card-badge-silver">Theme-Synced Key Art</span>
+              </div>
+              <div class="asset-frame asset-frame-9x16">
+                <img 
+                  src="Harrison_Arbitrage_Dark_9x16.jpg" 
+                  alt="Harrison Arbitrage 9:16 Campaign Poster"
+                  class="theme-brand-9x16"
+                  data-brand="arbitrage"
+                  data-fallback-title="Harrison Arbitrage 9:16 Poster"
+                  data-asset-status="9:16 POSTER"
+                />
+              </div>
+              <h3 class="card-title">9:16 Official Campaign Poster</h3>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  High-contrast vertical campaign still. Automatically switches between <code>Harrison_Arbitrage_Dark_9x16.jpg</code> and <code>Harrison_Arbitrage_Light_9x16.jpg</code> when the global theme toggles.
+                </p>
+              </div>
+            </div>
+            <p 
+              class="theme-status-caption"
+              data-caption-dark="ACTIVE FILE: Harrison_Arbitrage_Dark_9x16.jpg"
+              data-caption-light="ACTIVE FILE: Harrison_Arbitrage_Light_9x16.jpg"
+            >
+              ACTIVE FILE: Harrison_Arbitrage_Dark_9x16.jpg
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -245,10 +277,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
