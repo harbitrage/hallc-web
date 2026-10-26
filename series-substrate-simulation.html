@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Substrate Simulation Series | Harrison Arbitrage LLC</title>
-  <meta name="description" content="Explore the Substrate Simulation Series by Harrison Arbitrage LLC, including Project Mnemosyne, The Labyrinth Part 1, and The Labyrinth Part 2." />
+  <meta name="description" content="Explore all 3 volumes of the Substrate Simulation Series by Harrison Arbitrage LLC: Project Mnemosyne, The Labyrinth Part 1: The Sovereign Precipice, and The Labyrinth Part 2." />
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js" defer></script>
 </head>
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,6 +38,18 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
@@ -49,7 +57,7 @@
   <main>
     <section class="hero">
       <div class="container">
-        <span class="hero-kicker">Series 02 // Speculative Systems &amp; Ontological Inquiry</span>
+        <span class="hero-kicker">Series 02 // Speculative Systems &amp; Ontological Inquiry (3 Volumes)</span>
         <h1 class="hero-title">
           Substrate Simulation <span class="gold-accent">Series.</span>
         </h1>
@@ -80,42 +88,57 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AXIS // 01</span>
                 <span class="card-badge">Memory</span>
               </div>
               <h3 class="card-title">Mnemonic Sovereignty</h3>
-              <p class="card-desc">
-                When memory can be indexed, edited, or simulated at the substrate level, identity itself becomes contested territory requiring new forms of cognitive defense.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  When memory can be indexed, edited, or simulated at the substrate level, identity itself becomes contested territory requiring new forms of cognitive defense.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AXIS // 02</span>
                 <span class="card-badge-silver">Architecture</span>
               </div>
               <h3 class="card-title">The Labyrinthine Construct</h3>
-              <p class="card-desc">
-                Navigating nested layers of synthetic control systems, algorithmic determinism, and the hidden architectures governing perceived reality.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Navigating nested layers of synthetic control systems, algorithmic determinism, and the hidden architectures governing perceived reality.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>AXIS // 03</span>
                 <span class="card-badge">Agency</span>
               </div>
               <h3 class="card-title">The Sovereign Precipice</h3>
-              <p class="card-desc">
-                A deep exploration of human agency, resilience, and meaning as consciousness confronts the realization of its own underlying simulation infrastructure.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  A deep exploration of human agency, resilience, and meaning as consciousness confronts the realization of its own underlying simulation infrastructure.
+                </p>
+              </div>
             </div>
           </article>
         </div>
@@ -127,7 +150,7 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Published Installments</span>
-          <h2 class="section-title">Volumes in the Substrate Simulation Series</h2>
+          <h2 class="section-title">All 3 Volumes in the Substrate Simulation Series</h2>
           <p class="section-subtitle">
             Available now in digital Kindle and print paperback editions on Amazon.
           </p>
@@ -136,24 +159,29 @@
         <div style="display: flex; flex-direction: column; gap: 36px;">
 
           <!-- VOLUME 1: PROJECT MNEMOSYNE -->
-          <article class="spotlight-banner">
+          <article class="spotlight-banner" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="Project_Mnemosyne_Cover_2x3.jpg" 
                 alt="Book Cover for Project Mnemosyne"
                 data-fallback-title="Project Mnemosyne"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>FOUNDATIONAL ENTRY // SUBSTRATE SIMULATION</span>
+                <span>VOLUME 01 // FOUNDATIONAL ENTRY</span>
                 <span class="card-badge">Origin Volume</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">Project Mnemosyne</h3>
-              <p class="card-desc">
-                The foundational first entry in the <em>Substrate Simulation Series</em>. <strong>Project Mnemosyne</strong> introduces the core mechanics of synthetic memory architecture, continuity of consciousness, and the perilous consequences of tampering with the archival foundations of the mind.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  The foundational first entry in the <em>Substrate Simulation Series</em>. <strong>Project Mnemosyne</strong> introduces the core mechanics of synthetic memory architecture, continuity of consciousness, and the perilous consequences of tampering with the archival foundations of the mind.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0H9J2PXMG" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
@@ -161,24 +189,29 @@
           </article>
 
           <!-- VOLUME 2: THE LABYRINTH, PART 1 -->
-          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);">
+          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="The_Labyrinth_Part_1_Cover_2x3.jpg" 
                 alt="Book Cover for The Labyrinth, Part 1: The Sovereign Precipice"
                 data-fallback-title="The Labyrinth, Part 1: The Sovereign Precipice"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>INSTALLMENT 01 OF 14 // THE LABYRINTH ARC</span>
-                <span class="card-badge-silver">Part 1</span>
+                <span>VOLUME 02 // INSTALLMENT 01 OF 14</span>
+                <span class="card-badge-silver">The Labyrinth Arc</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">The Labyrinth, Part 1: The Sovereign Precipice</h3>
-              <p class="card-desc">
-                The opening installment of an ambitious 14-part narrative arc that explores the human experience within layered existential and technological labyrinths—challenging protagonists and readers alike to claim sovereign agency at the edge of the unknown.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  The opening installment of an ambitious 14-part narrative arc that explores the human experience within layered existential and technological labyrinths—challenging protagonists and readers alike to claim sovereign agency at the edge of the unknown.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0H9J2PXMG" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
@@ -186,31 +219,36 @@
           </article>
 
           <!-- VOLUME 3: THE LABYRINTH, PART 2 -->
-          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);">
+          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="The_Labyrinth_Part_2_Cover_2x3.jpg" 
                 alt="Book Cover for The Labyrinth, Part 2"
                 data-fallback-title="The Labyrinth, Part 2"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>INSTALLMENT 02 OF 14 // THE LABYRINTH ARC</span>
-                <span class="card-badge-silver">Part 2</span>
+                <span>VOLUME 03 // INSTALLMENT 02 OF 14</span>
+                <span class="card-badge">The Labyrinth Arc</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">The Labyrinth, Part 2</h3>
-              <p class="card-desc">
-                The second installment of the 14-part <em>Labyrinth</em> series. Expanding directly upon <em>The Sovereign Precipice</em>, Part 2 escalates the confrontation between autonomous human consciousness and the underlying architecture of the simulation substrate.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Continuing the 14-part Labyrinth saga, <strong>The Labyrinth, Part 2</strong> escalates the tension between constructed perception and sovereign will—revealing the deeper mechanisms of the simulation architecture and the human cost of awakening within it.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0H9J2PXMG" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- [ADD NEW BOOK HERE - Copy one <article class="spotlight-banner"> block above and paste below this line for future volumes in this series] -->
+          <!-- [ADD NEW BOOK HERE - Copy one <article class="spotlight-banner" data-collapsible-card> block above and paste below this line for future volumes in this series] -->
 
         </div>
       </div>
@@ -226,10 +264,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
@@ -259,7 +297,7 @@
             <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
             <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
             <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
-            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
+            <li><a href="https://www.amazon.com/stores/Kristopher-Harrison/author/B0HFGDX545" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
           </ul>
         </div>
 
