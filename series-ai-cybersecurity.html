@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI, Cybersecurity and Resilience Series | Harrison Arbitrage LLC</title>
-  <meta name="description" content="Explore the AI, Cybersecurity and Resilience Series by Harrison Arbitrage LLC—executive frameworks for Generative AI, SecMLOps, PMBOK delivery, and cyber risk governance." />
+  <meta name="description" content="Explore all 4 volumes of the AI, Cybersecurity and Resilience Series by Harrison Arbitrage LLC—executive frameworks for Generative AI, SecMLOps, PMBOK delivery, and cyber risk governance." />
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js" defer></script>
 </head>
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,6 +38,18 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
@@ -49,12 +57,12 @@
   <main>
     <section class="hero">
       <div class="container">
-        <span class="hero-kicker">Series 01 // Enterprise Strategy &amp; Risk Governance</span>
+        <span class="hero-kicker">Series 01 // Enterprise Strategy &amp; Risk Governance (4 Volumes)</span>
         <h1 class="hero-title">
           AI, Cybersecurity and <span class="gold-accent">Resilience Series.</span>
         </h1>
         <p class="hero-lead">
-          An authoritative multi-volume curriculum uniting boardroom strategy, IT governance, SecMLOps engineering, PMBOK®-aligned delivery, and frontline execution for organizations operating in high-consequence environments.
+          An authoritative four-volume curriculum uniting boardroom strategy, IT governance, SecMLOps engineering, frontline operational defense, and PMBOK®-aligned delivery for organizations operating in high-consequence environments.
         </p>
 
         <div class="quote-banner">
@@ -80,42 +88,57 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>DOMAIN // 01</span>
                 <span class="card-badge">Board &amp; C-Suite</span>
               </div>
               <h3 class="card-title">Fiduciary AI &amp; Cyber Governance</h3>
-              <p class="card-desc">
-                Equipping corporate directors and senior leaders with clear risk telemetry, regulatory alignment, and capital allocation models for enterprise AI adoption.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Equipping corporate directors and senior leaders with clear risk telemetry, regulatory alignment, and capital allocation models for enterprise AI adoption.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>DOMAIN // 02</span>
                 <span class="card-badge-silver">PMO &amp; Delivery</span>
               </div>
               <h3 class="card-title">PMBOK®-Aligned AI Execution</h3>
-              <p class="card-desc">
-                Embedding probabilistic AI capabilities, automated workflows, and continuous security validation directly into structured project and program management lifecycles.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Embedding probabilistic AI capabilities, automated workflows, and continuous security validation directly into structured project and program management lifecycles.
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>DOMAIN // 03</span>
-                <span class="card-badge">SecMLOps &amp; Field Ops</span>
+                <span class="card-badge">SecMLOps</span>
               </div>
               <h3 class="card-title">Operational Cyber Resilience</h3>
-              <p class="card-desc">
-                Hardening model supply chains, defending against adversarial manipulation, and equipping practitioners in the trenches with battle-tested operational playbooks.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Hardening model supply chains, defending against adversarial manipulation in the trenches, and instituting cognitive unlearning protocols across security operations.
+                </p>
+              </div>
             </div>
           </article>
         </div>
@@ -127,33 +150,38 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Published Volumes</span>
-          <h2 class="section-title">Volumes in the Series</h2>
+          <h2 class="section-title">All 4 Volumes in the Series</h2>
           <p class="section-subtitle">
-            Each book in the <em>AI, Cybersecurity and Resilience Series</em> stands alone as a field manual while interlocking into a unified enterprise governance architecture.
+            Each book in the <em>AI, Cybersecurity and Resilience Series</em> stands alone as an executive manual while interlocking into a unified enterprise governance architecture.
           </p>
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 36px;">
 
           <!-- VOLUME 1: THE UNLEARNING DILEMMA -->
-          <article class="spotlight-banner">
+          <article class="spotlight-banner" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="Unlearning_Dilemma_Cover_2x3.jpg" 
                 alt="Book Cover for The Unlearning Dilemma"
                 data-fallback-title="The Unlearning Dilemma"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>FEATURED VOLUME // CURRENT SPOTLIGHT</span>
+                <span>VOLUME 01 // CURRENT SPOTLIGHT</span>
                 <span class="card-badge">Active Campaign</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">The Unlearning Dilemma</h3>
-              <p class="card-desc">
-                <strong>Executive Focus:</strong> Why legacy organizational reflexes and deterministic management habits create catastrophic blind spots when scaling autonomous AI and modern cyber defense. Provides a structured playbook for executive cognitive reset and institutional agility.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  <strong>Executive Focus:</strong> Why legacy organizational reflexes and deterministic management habits create catastrophic blind spots when scaling autonomous AI and modern cyber defense. Provides a structured playbook for executive cognitive reset and institutional agility.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="spotlight.html" class="btn btn-gold">Explore Spotlight &amp; Campaign →</a>
                 <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">View on Amazon ↗</a>
@@ -162,25 +190,30 @@
           </article>
 
           <!-- VOLUME 2: THE AI-AUGMENTED PROJECT MANAGER -->
-          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);">
+          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="AI_Augmented_Project_Manager_Cover_2x3.jpg" 
                 alt="Book Cover for The AI-Augmented Project Manager"
                 data-fallback-title="The AI-Augmented Project Manager"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>SERIES VOLUME // DELIVERY &amp; SECMLOPS</span>
+                <span>VOLUME 02 // DELIVERY &amp; SECMLOPS</span>
                 <span class="card-badge-silver">PMBOK® Aligned</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">The AI-Augmented Project Manager</h3>
-              <p class="card-desc">
-                <strong>Subtitle:</strong> <em>Integrating Generative AI, SecMLOps, and Cyber Resilience into PMBOK®-Aligned Delivery.</em><br /><br />
-                A practical blueprint for modern project leaders transforming traditional delivery pipelines. Bridges rigorous project management standards with generative AI tooling, continuous security engineering (SecMLOps), and resilient delivery assurance.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  <strong>Subtitle:</strong> <em>Integrating Generative AI, SecMLOps, and Cyber Resilience into PMBOK®-Aligned Delivery.</em><br /><br />
+                  A practical blueprint for modern project leaders transforming traditional delivery pipelines. Bridges rigorous project management standards with generative AI tooling, continuous security engineering (SecMLOps), and resilient delivery assurance.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
@@ -188,25 +221,30 @@
           </article>
 
           <!-- VOLUME 3: THE AI-DRIVEN ENTERPRISE -->
-          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);">
+          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="AI_Driven_Enterprise_Cover_2x3.jpg" 
                 alt="Book Cover for The AI-Driven Enterprise"
                 data-fallback-title="The AI-Driven Enterprise"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>SERIES VOLUME // BOARDROOM &amp; CISO GOVERNANCE</span>
+                <span>VOLUME 03 // BOARDROOM &amp; CISO GOVERNANCE</span>
                 <span class="card-badge-silver">Enterprise Risk</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">The AI-Driven Enterprise</h3>
-              <p class="card-desc">
-                <strong>Subtitle:</strong> <em>Governing and Managing Cyber Risk in the Age of Intelligence.</em><br /><br />
-                Written for senior executives, board risk committees, and cybersecurity leaders. Establishes a comprehensive governance architecture for deploying enterprise-wide AI systems while defending Information Sovereignty, regulatory compliance, and operational continuity.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  <strong>Subtitle:</strong> <em>Governing and Managing Cyber Risk in the Age of Intelligence.</em><br /><br />
+                  Written for senior executives, board risk committees, and cybersecurity leaders. Establishes a comprehensive governance architecture for deploying enterprise-wide AI systems while defending Information Sovereignty, regulatory compliance, and operational continuity.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
@@ -214,31 +252,36 @@
           </article>
 
           <!-- VOLUME 4: AI IN THE TRENCHES -->
-          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);">
+          <article class="spotlight-banner" style="border-color: var(--silver-border-strong);" data-collapsible-card>
             <div class="asset-frame asset-frame-book">
               <img 
                 src="AI_in_the_Trenches_Cover_2x3.jpg" 
                 alt="Book Cover for AI in the Trenches"
                 data-fallback-title="AI in the Trenches"
-                data-asset-status="UPLOADED ASSET"
+                data-asset-status="2:3 COVER"
               />
             </div>
             <div>
               <div class="card-index" style="margin-bottom: 8px;">
-                <span>SERIES VOLUME // FRONTLINE EXECUTION</span>
-                <span class="card-badge-silver">Operational Practice</span>
+                <span>VOLUME 04 // FRONTLINE EXECUTION</span>
+                <span class="card-badge">Tactical Operations</span>
               </div>
               <h3 class="card-title" style="font-size: 1.85rem;">AI in the Trenches</h3>
-              <p class="card-desc">
-                Where high-level strategy meets real-world operational friction. <strong>AI in the Trenches</strong> equips hands-on practitioners, technical leads, and cyber defenders with actionable methodologies for deploying, securing, and sustaining AI systems under live enterprise constraints.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  <strong>Executive &amp; Practitioner Focus:</strong> Where high-level AI strategy meets contested operational reality. <em>AI in the Trenches</em> equips engineering leads, cyber defenders, and mission operators with concrete protocols for deploying, auditing, and securing autonomous workflows under real-world pressure.
+                </p>
+              </div>
               <div class="btn-group">
                 <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-gold">View on Amazon ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- [ADD NEW BOOK HERE - Copy one <article class="spotlight-banner"> block above and paste below this line for future volumes in this series] -->
+          <!-- [ADD NEW BOOK HERE - Copy one <article class="spotlight-banner" data-collapsible-card> block above and paste below this line for future volumes in this series] -->
 
         </div>
       </div>
@@ -254,10 +297,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
@@ -287,7 +330,7 @@
             <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
             <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
             <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
-            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
+            <li><a href="https://www.amazon.com/stores/Kristopher-Harrison/author/B0HFGDX545" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
           </ul>
         </div>
 
