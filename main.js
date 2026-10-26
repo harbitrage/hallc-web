@@ -1,5 +1,5 @@
 /* ==========================================================================
-   HARRISON ARBITRAGE LLC — CORE INTERACTION ENGINE (main.js)
+   HARRISON ARBITRAGE LLC — MOBILE-FIRST 9:16 INTERACTION ENGINE (main.js)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,10 +45,7 @@ function highlightActiveNav() {
 }
 
 /**
- * 3. Automatic Zero-Edit Fallback for Images Marked [NEED TO CREATE]
- *    When an image file isn't in the repo yet, replaces the broken image
- *    with an executive Black/Gold/Silver placeholder card. Once the image
- *    file is uploaded with that exact filename, it displays automatically.
+ * 3. Automatic Zero-Edit Fallback for Future Book Covers
  */
 function initMissingAssetFallbacks() {
   const images = document.querySelectorAll('img[data-fallback-title]');
@@ -62,7 +59,6 @@ function initMissingAssetFallbacks() {
       const title = img.getAttribute('data-fallback-title') || 'Harrison Arbitrage Asset';
       const status = img.getAttribute('data-asset-status') || 'NEED TO CREATE';
 
-      // Special case for compact header/footer logo mark
       if (img.classList.contains('logo-img-asset')) {
         const parent = img.parentElement;
         img.style.display = 'none';
@@ -92,7 +88,6 @@ function initMissingAssetFallbacks() {
 
     img.addEventListener('error', handleFallback);
 
-    // If the browser already tried and failed before DOMContentLoaded finished
     if (img.complete && img.naturalWidth === 0) {
       handleFallback();
     }
@@ -100,7 +95,7 @@ function initMissingAssetFallbacks() {
 }
 
 /**
- * 4. Interactive Campaign Asset Switcher (Dark / Light / 9x16 / Animated MP4)
+ * 4. Interactive Campaign & Brand Asset Switcher (9:16 Vertical & 1:1 Square)
  */
 function initMediaSwitchers() {
   const switcherGroups = document.querySelectorAll('[data-media-switcher]');
@@ -117,14 +112,20 @@ function initMediaSwitchers() {
         buttons.forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
 
-        const type = btn.getAttribute('data-media-type'); // 'image' or 'video'
+        const type = btn.getAttribute('data-media-type') || 'image';
         const src = btn.getAttribute('data-media-src');
-        const ratio = btn.getAttribute('data-media-ratio'); // '16x9' or '9x16'
+        const ratio = btn.getAttribute('data-media-ratio') || '9x16';
         const caption = btn.getAttribute('data-media-caption');
 
         if (stageFrame) {
-          stageFrame.classList.remove('asset-frame-16x9', 'asset-frame-9x16');
-          stageFrame.classList.add(ratio === '9x16' ? 'asset-frame-9x16' : 'asset-frame-16x9');
+          stageFrame.classList.remove('asset-frame-9x16', 'asset-frame-1x1', 'asset-frame-book');
+          if (ratio === '1x1') {
+            stageFrame.classList.add('asset-frame-1x1');
+          } else if (ratio === '2x3') {
+            stageFrame.classList.add('asset-frame-book');
+          } else {
+            stageFrame.classList.add('asset-frame-9x16');
+          }
         }
 
         if (type === 'video' && stageVideo && stageImage) {
@@ -135,9 +136,11 @@ function initMediaSwitchers() {
             stageVideo.load();
           }
           stageVideo.play().catch(() => {});
-        } else if (stageImage && stageVideo) {
-          stageVideo.pause();
-          stageVideo.style.display = 'none';
+        } else if (stageImage) {
+          if (stageVideo) {
+            stageVideo.pause();
+            stageVideo.style.display = 'none';
+          }
           stageImage.style.display = 'block';
           stageImage.setAttribute('src', src);
         }
