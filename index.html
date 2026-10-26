@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,10 +38,22 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (9:16 MOBILE-FIRST) ==================== -->
+  <!-- ==================== HERO SECTION (9:16 Theme-Synced Crest Reel) ==================== -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
@@ -68,72 +76,26 @@
           </div>
         </div>
 
-        <!-- 9:16 Vertical Mobile-First Switcher -->
-        <div data-media-switcher>
-          <div class="media-switcher-bar">
-            <button 
-              type="button" 
-              class="media-tab-btn active"
-              data-media-type="video"
-              data-media-src="Harrison_Arbitrage_Dark_9x16_Animated.mp4"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // DARK 9:16 MOTION (Harrison_Arbitrage_Dark_9x16_Animated.mp4)"
-            >
-              Dark 9:16 Motion
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="video"
-              data-media-src="Harrison_Arbitrage_Light_9x16_Animated.mp4"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // LIGHT 9:16 MOTION (Harrison_Arbitrage_Light_9x16_Animated.mp4)"
-            >
-              Light 9:16 Motion
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Dark_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // DARK 9:16 EDITION (Harrison_Arbitrage_Dark_9x16.jpg)"
-            >
-              Dark 9:16 Still
-            </button>
-            <button 
-              type="button" 
-              class="media-tab-btn"
-              data-media-type="image"
-              data-media-src="Harrison_Arbitrage_Light_9x16.jpg"
-              data-media-ratio="9x16"
-              data-media-caption="HARRISON ARBITRAGE // LIGHT 9:16 EDITION (Harrison_Arbitrage_Light_9x16.jpg)"
-            >
-              Light 9:16 Still
-            </button>
-          </div>
-
-          <div class="asset-frame asset-frame-9x16 switcher-stage-frame">
-            <img 
-              src="Harrison_Arbitrage_Dark_9x16.jpg" 
-              alt="Harrison Arbitrage LLC 9:16 Visual" 
-              class="switcher-stage-img"
-              style="display: none;"
-              data-fallback-title="Harrison Arbitrage 9:16 Poster"
-              data-asset-status="UPLOADED ASSET"
-            />
+        <!-- Automatic Theme-Reactive 9:16 Animated Crest Video -->
+        <div>
+          <div class="asset-frame asset-frame-9x16">
             <video 
-              class="switcher-stage-video" 
-              src="Harrison_Arbitrage_Dark_9x16_Animated.mp4" 
-              autoplay 
-              muted 
-              loop 
-              playsinline 
-              controls
+              class="theme-brand-video"
+              data-brand="arbitrage"
+              src="Harrison_Arbitrage_Dark_9x16_Animated.mp4"
+              poster="Harrison_Arbitrage_Dark_9x16.jpg"
+              autoplay
+              muted
+              loop
+              playsinline
             ></video>
           </div>
-          <p class="switcher-caption" style="text-align: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-silver);">
-            HARRISON ARBITRAGE // DARK 9:16 MOTION (Harrison_Arbitrage_Dark_9x16_Animated.mp4)
+          <p 
+            class="theme-status-caption"
+            data-caption-dark="HARRISON ARBITRAGE // DARK EDITION 9:16 REEL"
+            data-caption-light="HARRISON ARBITRAGE // LIGHT EDITION 9:16 REEL"
+          >
+            HARRISON ARBITRAGE // DARK EDITION 9:16 REEL
           </p>
         </div>
       </div>
@@ -150,37 +112,44 @@
           </p>
         </div>
 
-        <div class="spotlight-banner">
+        <div class="spotlight-banner" data-collapsible-card>
           <div class="asset-frame asset-frame-book">
             <img 
               src="Unlearning_Dilemma_Cover_2x3.jpg" 
               alt="Book Cover for The Unlearning Dilemma"
-              data-fallback-title="The Unlearning Dilemma (Book Cover)"
-              data-asset-status="UPLOADED ASSET"
+              data-fallback-title="The Unlearning Dilemma"
+              data-asset-status="2:3 COVER"
             />
           </div>
 
           <div>
             <span class="card-badge">Featured Release // Active Campaign</span>
-            <h3 class="card-title" style="font-size: 2rem; margin-top: 14px;">
+            <h3 class="card-title" style="font-size: 1.95rem; margin-top: 14px;">
               The Unlearning Dilemma
             </h3>
-            <p class="card-desc">
-              Organizations rarely fail because they cannot acquire new tools; they fail because they graft next-generation intelligence onto obsolete governance assumptions. <strong>The Unlearning Dilemma</strong> delivers an executive framework for structural cognitive reset across boardroom leadership, cybersecurity posture, and operational delivery.
-            </p>
 
-            <div class="meta-list">
-              <div class="meta-item">
-                <span class="meta-label">Primary Imprint</span>
-                <span class="meta-value">Harrison Arbitrage Publishing</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Featured Series</span>
-                <span class="meta-value">AI, Cybersecurity &amp; Resilience</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Formats</span>
-                <span class="meta-value">Kindle &amp; Paperback (Amazon)</span>
+            <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+              <span>Collapse Details</span> <span>[−]</span>
+            </button>
+
+            <div class="collapsible-content">
+              <p class="card-desc">
+                Organizations rarely fail because they cannot acquire new tools; they fail because they graft next-generation intelligence onto obsolete governance assumptions. <strong>The Unlearning Dilemma</strong> delivers an executive framework for structural cognitive reset across boardroom leadership, cybersecurity posture, and operational delivery.
+              </p>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Primary Imprint</span>
+                  <span class="meta-value">Harrison Arbitrage Publishing</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Featured Series</span>
+                  <span class="meta-value">AI, Cybersecurity &amp; Resilience</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Formats</span>
+                  <span class="meta-value">Kindle &amp; Paperback (Amazon)</span>
+                </div>
               </div>
             </div>
 
@@ -205,44 +174,59 @@
         </div>
 
         <div class="grid-3">
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PILLAR // 01</span>
                 <span class="card-badge-silver">Governance</span>
               </div>
               <h3 class="card-title">Information Sovereignty</h3>
-              <p class="card-desc">
-                Establishing digital independence, zero-trust intellectual stewardship, and operational resilience in an increasingly volatile enterprise and national security landscape.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Establishing digital independence, zero-trust intellectual stewardship, and operational resilience in an increasingly volatile enterprise and national security landscape.
+                </p>
+              </div>
             </div>
             <a href="about.html" class="link-arrow">Explore Our Mission →</a>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PILLAR // 02</span>
                 <span class="card-badge">Publishing</span>
               </div>
               <h3 class="card-title">Strategic Publishing</h3>
-              <p class="card-desc">
-                Bridging the historical divide between boardroom strategy, IT governance, hands-on risk management, and speculative systems inquiry through two flagship multi-volume series.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Bridging the historical divide between boardroom strategy, IT governance, hands-on risk management, and speculative systems inquiry through two flagship multi-volume series (7 published titles).
+                </p>
+              </div>
             </div>
             <a href="publishing.html" class="link-arrow">Explore Publishing Hub →</a>
           </article>
 
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>PILLAR // 03</span>
                 <span class="card-badge-silver">Portfolio</span>
               </div>
               <h3 class="card-title">Multi-Domain Arbitrage</h3>
-              <p class="card-desc">
-                Uniting probabilistic enterprise AI deployment (Harrison AI Agents) with curated physical artifacts of historical significance (Harrison Collectibles).
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Uniting probabilistic enterprise AI deployment (Harrison AI Agents) with curated physical artifacts of historical significance (Harrison Collectibles).
+                </p>
+              </div>
             </div>
             <a href="brands.html" class="link-arrow">Explore Brand Portfolio →</a>
           </article>
@@ -263,19 +247,24 @@
 
         <div class="grid-2">
           <!-- Series 1 Card -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES // 01</span>
-                <span class="card-badge">Enterprise &amp; Risk</span>
+                <span class="card-badge">4 Volumes // Enterprise &amp; Risk</span>
               </div>
               <h3 class="card-title">AI, Cybersecurity and Resilience Series</h3>
-              <p class="card-desc">
-                Actionable playbooks for C-suite executives, program directors, and security architects navigating generative AI integration, SecMLOps, PMBOK®-aligned delivery, and frontline operational deployment.
-              </p>
-              <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-platinum);">
-                Includes: <em>The Unlearning Dilemma</em> • <em>The AI-Augmented Project Manager</em> • <em>The AI-Driven Enterprise</em> • <em>AI in the Trenches</em>
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Actionable playbooks for C-suite executives, program directors, and security architects navigating generative AI integration, SecMLOps, PMBOK®-aligned delivery, and enterprise cyber risk governance.
+                </p>
+                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-platinum);">
+                  Volumes: <em>The Unlearning Dilemma</em> • <em>The AI-Augmented Project Manager</em> • <em>The AI-Driven Enterprise</em> • <em>AI in the Trenches</em>
+                </p>
+              </div>
             </div>
             <div class="btn-group" style="margin-top: 12px;">
               <a href="series-ai-cybersecurity.html" class="btn btn-gold">Explore Series Page →</a>
@@ -284,19 +273,24 @@
           </article>
 
           <!-- Series 2 Card -->
-          <article class="enterprise-card">
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>SERIES // 02</span>
-                <span class="card-badge-silver">Speculative &amp; Philosophical</span>
+                <span class="card-badge-silver">3 Volumes // Speculative Systems</span>
               </div>
               <h3 class="card-title">Substrate Simulation Series</h3>
-              <p class="card-desc">
-                A rigorous, multi-installment exploration of memory architecture, synthetic reality, human agency, and the sovereign precipice where consciousness confronts the underlying substrate.
-              </p>
-              <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-platinum);">
-                Includes: <em>Project Mnemosyne</em> • <em>The Labyrinth, Part 1: The Sovereign Precipice</em> • <em>The Labyrinth, Part 2</em>
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  A rigorous, multi-installment exploration of memory architecture, synthetic reality, human agency, and the sovereign precipice where consciousness confronts the underlying substrate.
+                </p>
+                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-platinum);">
+                  Volumes: <em>Project Mnemosyne</em> • <em>The Labyrinth, Part 1: The Sovereign Precipice</em> • <em>The Labyrinth, Part 2</em>
+                </p>
+              </div>
             </div>
             <div class="btn-group" style="margin-top: 12px;">
               <a href="series-substrate-simulation.html" class="btn btn-gold">Explore Series Page →</a>
@@ -317,10 +311,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
