@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,10 @@
         <div class="logo-mark-wrap">
           <img 
             src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Square Logo" 
-            class="logo-img-asset"
-            data-fallback-title="Harrison Arbitrage Logo"
-            data-asset-status="UPLOADED ASSET"
+            alt="Harrison Arbitrage LLC Crest" 
+            class="theme-brand-logo"
+            data-fallback-title="Harrison Arbitrage Crest"
+            data-asset-status="LIVE ASSET"
           />
         </div>
         <div class="brand-text-group">
@@ -29,11 +29,7 @@
         </div>
       </a>
 
-      <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Navigation">
-        MENU [≡]
-      </button>
-
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Primary Navigation">
         <a href="index.html">Home</a>
         <a href="publishing.html">Publishing</a>
         <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
@@ -42,6 +38,18 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
       </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
+          ☀️ Light Mode
+        </button>
+        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
+          📱 Mobile View
+        </button>
+        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
+          ☰ MENU
+        </button>
+      </div>
     </div>
   </header>
 
@@ -67,57 +75,75 @@
     <section class="section section-alt">
       <div class="container">
         <div class="grid-3">
-          <article class="enterprise-card">
+          <!-- Headquarters Card -->
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>CHANNEL // 01</span>
                 <span class="card-badge">Headquarters</span>
               </div>
               <h3 class="card-title">Direct Correspondence</h3>
-              <p class="card-desc">
-                <strong>Email:</strong><br />
-                <a href="mailto:info@harrisonarbitrage.com" style="color: var(--gold-champagne);">info@harrisonarbitrage.com</a>
-              </p>
-              <p class="card-desc">
-                <strong>Telephone:</strong><br />
-                <a href="tel:4439919896" style="color: var(--text-platinum);">443-991-9896</a>
-              </p>
-              <p class="card-desc" style="margin-bottom: 0;">
-                <strong>Location:</strong><br />
-                Maryland, USA (UTC -04:00)
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  <strong>Email:</strong><br />
+                  <a href="mailto:info@harrisonarbitrage.com" style="color: var(--gold-primary);">info@harrisonarbitrage.com</a>
+                </p>
+                <p class="card-desc">
+                  <strong>Telephone:</strong><br />
+                  <a href="tel:4439919896" style="color: var(--text-platinum);">443-991-9896</a>
+                </p>
+                <p class="card-desc" style="margin-bottom: 0;">
+                  <strong>Location:</strong><br />
+                  Maryland, USA (UTC -04:00)
+                </p>
+              </div>
             </div>
           </article>
 
-          <article class="enterprise-card">
+          <!-- Publishing & Speaking Card -->
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>CHANNEL // 02</span>
                 <span class="card-badge-silver">Publishing</span>
               </div>
               <h3 class="card-title">Publishing &amp; Bulk Orders</h3>
-              <p class="card-desc">
-                For executive bulk book acquisitions, keynote briefings on <em>The Unlearning Dilemma</em>, or curriculum adoption for the <em>AI, Cybersecurity and Resilience Series</em>.
-              </p>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  For executive bulk book acquisitions, keynote briefings on <em>The Unlearning Dilemma</em>, or curriculum adoption for the <em>AI, Cybersecurity and Resilience Series</em>.
+                </p>
+              </div>
             </div>
             <a href="mailto:info@harrisonarbitrage.com?subject=Publishing%20%26%20Executive%20Briefing%20Inquiry" class="link-arrow">Request Publishing Dossier →</a>
           </article>
 
-          <article class="enterprise-card">
+          <!-- Network & Social Directory -->
+          <article class="enterprise-card" data-collapsible-card>
             <div>
               <div class="card-index">
                 <span>CHANNEL // 03</span>
                 <span class="card-badge-silver">Network</span>
               </div>
               <h3 class="card-title">Digital Footprint</h3>
-              <p class="card-desc">
-                Follow our ongoing publications, campaign releases, and subsidiary updates across our official network channels.
-              </p>
-              <ul class="footer-links" style="margin-top: 16px;">
-                <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">LinkedIn Directory ↗</a></li>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Instagram ↗</a></li>
-                <li><a href="https://harrisonaiagents.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Harrison AI Agents ↗</a></li>
-              </ul>
+              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
+                <span>Collapse Details</span> <span>[−]</span>
+              </button>
+              <div class="collapsible-content">
+                <p class="card-desc">
+                  Follow our ongoing publications, campaign releases, and subsidiary updates across our official network channels.
+                </p>
+                <ul class="footer-links" style="margin-top: 16px;">
+                  <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">LinkedIn Directory ↗</a></li>
+                  <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Instagram ↗</a></li>
+                  <li><a href="https://harrisonaiagents.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Harrison AI Agents ↗</a></li>
+                </ul>
+              </div>
             </div>
           </article>
         </div>
@@ -134,10 +160,10 @@
             <div class="logo-mark-wrap">
               <img 
                 src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Square Logo" 
-                class="logo-img-asset"
-                data-fallback-title="Harrison Arbitrage Logo"
-                data-asset-status="UPLOADED ASSET"
+                alt="Harrison Arbitrage LLC Crest" 
+                class="theme-brand-logo"
+                data-fallback-title="Harrison Arbitrage Crest"
+                data-asset-status="LIVE ASSET"
               />
             </div>
             <div class="brand-text-group">
