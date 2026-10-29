@@ -9,311 +9,147 @@
   <script src="main.js" defer></script>
 </head>
 <body>
+  <div class="app-shell">
+    <harrison-sidebar></harrison-sidebar>
 
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <div class="logo-mark-wrap">
-          <img 
-            src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Crest" 
-            class="theme-brand-logo"
-            data-fallback-title="Harrison Arbitrage Crest"
-            data-asset-status="LIVE ASSET"
-          />
-        </div>
-        <div class="brand-text-group">
-          <span class="brand-name-main">Harrison Arbitrage</span>
-          <span class="brand-name-sub">Sovereignty // Strategy</span>
-        </div>
-      </a>
+    <main class="main-content">
+      <!-- ==================== BRANDS HERO ==================== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="hero-kicker">Portfolio Architecture</span>
+            <h1 class="hero-title">
+              The Harrison <span class="gold-accent">Family of Brands.</span>
+            </h1>
+            <p class="hero-lead">
+              Our diversified portfolio unites under the common mission of strategic arbitrage, Information Sovereignty, and operational mastery across both digital intelligence and physical manifestation.
+            </p>
 
-      <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="index.html">Home</a>
-        <a href="publishing.html">Publishing</a>
-        <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
-        <a href="brands.html">Brands</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-
-      <div class="header-controls">
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
-          ☀️ Light Mode
-        </button>
-        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
-          📱 Mobile View
-        </button>
-        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
-          ☰ MENU
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ==================== HERO SECTION ==================== -->
-  <main>
-    <section class="hero">
-      <div class="container">
-        <span class="hero-kicker">Portfolio Architecture</span>
-        <h1 class="hero-title">
-          The Harrison <span class="gold-accent">Family of Brands.</span>
-        </h1>
-        <p class="hero-lead">
-          Our diversified portfolio unites under the common mission of strategic arbitrage, Information Sovereignty, and operational mastery across both digital intelligence and physical manifestation.
-        </p>
-
-        <div class="quote-banner">
-          "From probabilistic enterprise AI architectures to tangible artifacts of enduring historical value."
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== BRANDS PORTFOLIO GRID (9:16 Theme-Synced Cards) ==================== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Operating Divisions &amp; Subsidiaries</span>
-          <h2 class="section-title">Sovereign Brands &amp; Platforms</h2>
-          <p class="section-subtitle">
-            Each division operates with specialized domain focus while adhering to the overarching governance and strategic standards of Harrison Arbitrage LLC. Toggle <strong>Dark / Light Mode</strong> in the header to view each brand's corresponding 9:16 visual identity.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <!-- BRAND 01: HARRISON AI AGENTS -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>BRAND // 01</span>
-                <span class="card-badge">Enterprise AI</span>
-              </div>
-              <div class="asset-frame asset-frame-9x16">
-                <img 
-                  src="Harrison_Agents_Dark_9x16.jpg" 
-                  alt="Harrison AI Agents 9:16 Brand Crest"
-                  class="theme-brand-9x16"
-                  data-brand="agents"
-                  data-fallback-title="Harrison AI Agents 9:16"
-                  data-asset-status="9:16 ASSET"
-                />
-              </div>
-              <p 
-                class="theme-status-caption"
-                style="margin-bottom: 14px;"
-                data-caption-dark="ACTIVE: Harrison_Agents_Dark_9x16.jpg"
-                data-caption-light="ACTIVE: Harrison_Agents_Light_9x16.jpg"
-              >
-                ACTIVE: Harrison_Agents_Dark_9x16.jpg
-              </p>
-              <h3 class="card-title">Harrison AI Agents</h3>
-
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  Deploying cutting-edge, probabilistic AI architecture for enterprise business enablement. Specializing in agentic workflow automation, 24/7 autonomous voice reception, AI ad campaigns, media processing pipelines, and custom multi-agent operational intelligence.
-                </p>
-
-                <div class="meta-list">
-                  <div class="meta-item">
-                    <span class="meta-label">Core Focus</span>
-                    <span class="meta-value">Agentic Automation &amp; AI Deployment</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-label">Platform</span>
-                    <span class="meta-value">harrisonaiagents.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="btn-group">
-              <a href="https://harrisonaiagents.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Visit Site ↗</a>
-              <a href="contact.html" class="btn btn-silver-outline">Enterprise Inquiry</a>
-            </div>
-          </article>
-
-          <!-- BRAND 02: HARRISON COLLECTIBLES -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>BRAND // 02</span>
-                <span class="card-badge-silver">Physical Manifestation</span>
-              </div>
-              <div class="asset-frame asset-frame-9x16">
-                <img 
-                  src="Harrison_Collectibles_Dark_9x16.jpg" 
-                  alt="Harrison Collectibles 9:16 Brand Crest"
-                  class="theme-brand-9x16"
-                  data-brand="collectibles"
-                  data-fallback-title="Harrison Collectibles 9:16"
-                  data-asset-status="9:16 ASSET"
-                />
-              </div>
-              <p 
-                class="theme-status-caption"
-                style="margin-bottom: 14px;"
-                data-caption-dark="ACTIVE: Harrison_Collectibles_Dark_9x16.jpg"
-                data-caption-light="ACTIVE: Harrison_Collectibles_Light_9x16.jpg"
-              >
-                ACTIVE: Harrison_Collectibles_Dark_9x16.jpg
-              </p>
-              <h3 class="card-title">Harrison Collectibles</h3>
-
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  Curating physical manifestations of strategic value and historical significance. Dedicated to the preservation, verification, and acquisition of tangible collectibles, graded editions, and culturally enduring artifacts.
-                </p>
-
-                <div class="meta-list">
-                  <div class="meta-item">
-                    <span class="meta-label">Core Focus</span>
-                    <span class="meta-value">Curated Artifacts &amp; Strategic Value</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-label">Division</span>
-                    <span class="meta-value">Physical Asset Arbitrage</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="btn-group">
-              <a href="contact.html" class="btn btn-gold">Inquire / Visit Division →</a>
-            </div>
-          </article>
-
-          <!-- BRAND 03: HARRISON ARBITRAGE STRATEGIC PUBLISHING -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>BRAND // 03</span>
-                <span class="card-badge">Intellectual Capital</span>
-              </div>
-              <div class="asset-frame asset-frame-9x16">
-                <img 
-                  src="Harrison_Arbitrage_Dark_9x16.jpg" 
-                  alt="Harrison Arbitrage Strategic Publishing 9:16 Crest"
-                  class="theme-brand-9x16"
-                  data-brand="arbitrage"
-                  data-fallback-title="Harrison Arbitrage 9:16"
-                  data-asset-status="9:16 ASSET"
-                />
-              </div>
-              <p 
-                class="theme-status-caption"
-                style="margin-bottom: 14px;"
-                data-caption-dark="ACTIVE: Harrison_Arbitrage_Dark_9x16.jpg"
-                data-caption-light="ACTIVE: Harrison_Arbitrage_Light_9x16.jpg"
-              >
-                ACTIVE: Harrison_Arbitrage_Dark_9x16.jpg
-              </p>
-              <h3 class="card-title">Strategic Publishing</h3>
-
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  Our in-house publishing imprint producing executive doctrine across the 4-volume <em>AI, Cybersecurity and Resilience Series</em> and speculative inquiry through the 3-volume <em>Substrate Simulation Series</em>.
-                </p>
-
-                <div class="meta-list">
-                  <div class="meta-item">
-                    <span class="meta-label">Active Catalog</span>
-                    <span class="meta-value">7 Published Volumes Across 2 Series</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-label">Featured Release</span>
-                    <span class="meta-value">The Unlearning Dilemma</span>
-                  </div>
-                </div>
-              </div>
+            <div class="quote-banner">
+              "From probabilistic enterprise AI architectures to tangible artifacts of enduring historical value."
             </div>
 
             <div class="btn-group">
               <a href="publishing.html" class="btn btn-gold">Explore Publishing Hub →</a>
-              <a href="spotlight.html" class="btn btn-silver-outline">Current Spotlight</a>
+              <a href="contact.html" class="btn btn-silver-outline">Enterprise Inquiries</a>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
+          </div>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
-            <div class="logo-mark-wrap">
-              <img 
-                src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Crest" 
-                class="theme-brand-logo"
-                data-fallback-title="Harrison Arbitrage Crest"
-                data-asset-status="LIVE ASSET"
+          <div>
+            <div class="asset-frame asset-frame-9x16">
+              <img
+                src="Harrison_Arbitrage_Dark_9x16.jpg"
+                alt="Harrison Family of Brands 9:16 Crest"
+                class="theme-brand-9x16"
+                data-brand="arbitrage"
               />
             </div>
-            <div class="brand-text-group">
-              <span class="brand-name-main">Harrison Arbitrage LLC</span>
-              <span class="brand-name-sub">Maryland, USA // UTC -04:00</span>
-            </div>
-          </a>
-          <p class="card-desc" style="max-width: 360px;">
-            Operating at the intersection of abstract strategy and physical manifestation. Advancing Information Sovereignty across publishing, enterprise AI, and curated collectibles.
-          </p>
+            <p
+              class="theme-status-caption"
+              data-caption-dark="FAMILY OF BRANDS // DARK EDITION 9:16"
+              data-caption-light="FAMILY OF BRANDS // LIGHT EDITION 9:16"
+            >
+              FAMILY OF BRANDS // DARK EDITION 9:16
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publishing.html">Publishing Hub</a></li>
-            <li><a href="spotlight.html">Current Spotlight</a></li>
-            <li><a href="brands.html">Family of Brands</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
+      <!-- ==================== OPERATING DIVISIONS ==================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Operating Divisions</span>
+            <h2 class="section-title">Sovereign Brands &amp; Platforms</h2>
+            <p class="section-subtitle">
+              Each division operates with specialized domain focus while adhering to the overarching governance standards of Harrison Arbitrage LLC.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <!-- BRAND 1 -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>DIVISION // 01</span>
+                  <span class="card-badge">Enterprise AI</span>
+                </div>
+                <div class="asset-frame asset-frame-9x16" style="margin-bottom: 1.25rem;">
+                  <img
+                    src="Harrison_Agents_Dark_9x16.jpg"
+                    alt="Harrison AI Agents 9:16 Visual"
+                    class="theme-brand-9x16"
+                    data-brand="agents"
+                  />
+                </div>
+                <h3 class="card-title">Harrison AI Agents</h3>
+                <p class="card-desc">
+                  Deploying cutting-edge, probabilistic AI architecture for enterprise business enablement. Specializing in agentic workflow automation, voice reception, and multi-agent operational intelligence.
+                </p>
+              </div>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="https://harrisonaiagents.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Visit Division ↗</a>
+                <a href="https://harrisonaiagents.com/academy/" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">AI Academy ↗</a>
+              </div>
+            </article>
+
+            <!-- BRAND 2 -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>DIVISION // 02</span>
+                  <span class="card-badge-silver">Physical Assets</span>
+                </div>
+                <div class="asset-frame asset-frame-9x16" style="margin-bottom: 1.25rem;">
+                  <img
+                    src="Harrison_Collectibles_Dark_9x16.jpg"
+                    alt="Harrison Collectibles 9:16 Visual"
+                    class="theme-brand-9x16"
+                    data-brand="collectibles"
+                  />
+                </div>
+                <h3 class="card-title">Harrison Collectibles</h3>
+                <p class="card-desc">
+                  Curating physical manifestations of strategic value and historical significance. Dedicated to the preservation, verification, and acquisition of tangible collectibles and culturally enduring artifacts.
+                </p>
+              </div>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="contact.html" class="btn btn-gold">Inquire on Collectibles →</a>
+              </div>
+            </article>
+
+            <!-- BRAND 3 -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>DIVISION // 03</span>
+                  <span class="card-badge">Publishing Imprint</span>
+                </div>
+                <div class="asset-frame asset-frame-9x16" style="margin-bottom: 1.25rem;">
+                  <img
+                    src="Harrison_Arbitrage_Dark_9x16.jpg"
+                    alt="Strategic Publishing 9:16 Visual"
+                    class="theme-brand-9x16"
+                    data-brand="arbitrage"
+                  />
+                </div>
+                <h3 class="card-title">Strategic Publishing</h3>
+                <p class="card-desc">
+                  Our in-house publishing imprint producing executive doctrine across the 4-volume AI, Cybersecurity and Resilience Series and speculative inquiry through the 3-volume Substrate Simulation Series.
+                </p>
+              </div>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="publishing.html" class="btn btn-gold">Explore Publishing Hub →</a>
+                <a href="spotlight.html" class="btn btn-silver-outline">Current Spotlight</a>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h4 class="footer-col-title">Publishing Series</h4>
-          <ul class="footer-links">
-            <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
-            <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
-            <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
-            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Governance &amp; Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:info@harrisonarbitrage.com">info@harrisonarbitrage.com</a></li>
-            <li><a href="tel:4439919896">443-991-9896</a></li>
-            <li><a href="contact.html">Enterprise Inquiries</a></li>
-            <li><a href="privacy.html">Privacy &amp; Data Sovereignty</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>&copy; 2026 Harrison Arbitrage LLC. All Rights Reserved.</span>
-        <span>Information Sovereignty // Strategic Publishing // Enterprise Arbitrage</span>
-      </div>
-    </div>
-  </footer>
-
+      <!-- ==================== GLOBAL FOOTER CTA ==================== -->
+      <harrison-footer-cta></harrison-footer-cta>
+    </main>
+  </div>
 </body>
 </html>
