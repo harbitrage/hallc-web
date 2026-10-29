@@ -3,217 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Harrison Arbitrage LLC</title>
-  <meta name="description" content="Connect with Harrison Arbitrage LLC regarding strategic publishing inquiries, enterprise consulting, or brand partnerships." />
+  <title>Contact &amp; Enterprise Inquiries | Harrison Arbitrage LLC</title>
+  <meta name="description" content="Contact Harrison Arbitrage LLC for publishing inquiries, executive briefings, enterprise AI engagements, and collectibles acquisition." />
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js" defer></script>
 </head>
 <body>
+  <div class="app-shell">
+    <harrison-sidebar></harrison-sidebar>
 
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <div class="logo-mark-wrap">
-          <img 
-            src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Crest" 
-            class="theme-brand-logo"
-            data-fallback-title="Harrison Arbitrage Crest"
-            data-asset-status="LIVE ASSET"
-          />
-        </div>
-        <div class="brand-text-group">
-          <span class="brand-name-main">Harrison Arbitrage</span>
-          <span class="brand-name-sub">Sovereignty // Strategy</span>
-        </div>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="index.html">Home</a>
-        <a href="publishing.html">Publishing</a>
-        <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
-        <a href="brands.html">Brands</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-
-      <div class="header-controls">
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
-          ☀️ Light Mode
-        </button>
-        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
-          📱 Mobile View
-        </button>
-        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
-          ☰ MENU
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ==================== CONTACT HERO & CHANNELS ==================== -->
-  <main>
-    <section class="hero">
-      <div class="container">
-        <span class="hero-kicker">Executive Communications</span>
-        <h1 class="hero-title">
-          Initiate <span class="gold-accent">Contact.</span>
-        </h1>
-        <p class="hero-lead">
-          Connect with our team regarding strategic publishing inquiries, enterprise consulting, speaking engagements, or brand partnerships across the Harrison Family of Brands.
-        </p>
-
-        <div class="btn-group">
-          <a href="mailto:info@harrisonarbitrage.com?subject=Enterprise%20Inquiry%20%E2%80%94%20Harrison%20Arbitrage%20LLC" class="btn btn-gold">Submit Inquiry via Email →</a>
-          <a href="tel:4439919896" class="btn btn-silver-outline">Call Headquarters: 443-991-9896</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="grid-3">
-          <!-- Headquarters Card -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>CHANNEL // 01</span>
-                <span class="card-badge">Headquarters</span>
-              </div>
-              <h3 class="card-title">Direct Correspondence</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  <strong>Email:</strong><br />
-                  <a href="mailto:info@harrisonarbitrage.com" style="color: var(--gold-primary);">info@harrisonarbitrage.com</a>
-                </p>
-                <p class="card-desc">
-                  <strong>Telephone:</strong><br />
-                  <a href="tel:4439919896" style="color: var(--text-platinum);">443-991-9896</a>
-                </p>
-                <p class="card-desc" style="margin-bottom: 0;">
-                  <strong>Location:</strong><br />
-                  Maryland, USA (UTC -04:00)
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Publishing & Speaking Card -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>CHANNEL // 02</span>
-                <span class="card-badge-silver">Publishing</span>
-              </div>
-              <h3 class="card-title">Publishing &amp; Bulk Orders</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  For executive bulk book acquisitions, keynote briefings on <em>The Unlearning Dilemma</em>, or curriculum adoption for the <em>AI, Cybersecurity and Resilience Series</em>.
-                </p>
-              </div>
-            </div>
-            <a href="mailto:info@harrisonarbitrage.com?subject=Publishing%20%26%20Executive%20Briefing%20Inquiry" class="link-arrow">Request Publishing Dossier →</a>
-          </article>
-
-          <!-- Network & Social Directory -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>CHANNEL // 03</span>
-                <span class="card-badge-silver">Network</span>
-              </div>
-              <h3 class="card-title">Digital Footprint</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
-                <p class="card-desc">
-                  Follow our ongoing publications, campaign releases, and subsidiary updates across our official network channels.
-                </p>
-                <ul class="footer-links" style="margin-top: 16px;">
-                  <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">LinkedIn Directory ↗</a></li>
-                  <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Instagram ↗</a></li>
-                  <li><a href="https://harrisonaiagents.com" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-top: 4px;">Harrison AI Agents ↗</a></li>
-                </ul>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
-            <div class="logo-mark-wrap">
-              <img 
-                src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Crest" 
-                class="theme-brand-logo"
-                data-fallback-title="Harrison Arbitrage Crest"
-                data-asset-status="LIVE ASSET"
-              />
-            </div>
-            <div class="brand-text-group">
-              <span class="brand-name-main">Harrison Arbitrage LLC</span>
-              <span class="brand-name-sub">Maryland, USA // UTC -04:00</span>
-            </div>
-          </a>
-          <p class="card-desc" style="max-width: 360px;">
-            Operating at the intersection of abstract strategy and physical manifestation. Advancing Information Sovereignty across publishing, enterprise AI, and curated collectibles.
+    <main class="main-content">
+      <!-- ==================== CONTACT HERO ==================== -->
+      <section class="hero">
+        <div class="container">
+          <span class="hero-kicker">Direct Engagement</span>
+          <h1 class="hero-title">
+            Enterprise Inquiries &amp; <span class="gold-accent">Strategic Communications.</span>
+          </h1>
+          <p class="hero-lead">
+            Connect with Harrison Arbitrage LLC for publishing inquiries, executive briefings, enterprise AI deployments via Harrison AI Agents, or curated physical collectibles.
           </p>
+
+          <div class="quote-banner">
+            "Direct dialogue for sovereign leaders, security architects, and strategic partners."
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publishing.html">Publishing Hub</a></li>
-            <li><a href="spotlight.html">Current Spotlight</a></li>
-            <li><a href="brands.html">Family of Brands</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
+      <!-- ==================== CONTACT CHANNELS ==================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="grid-2">
+            <!-- Direct Channels Card -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>DIRECT CHANNELS</span>
+                  <span class="card-badge">Maryland HQ</span>
+                </div>
+                <h3 class="card-title">Corporate Headquarters</h3>
+                <p class="card-desc">
+                  Our team is headquartered in Maryland, United States, operating across Eastern Standard Time (UTC -04:00).
+                </p>
+
+                <div class="meta-list" style="margin-top: 1.5rem;">
+                  <div class="meta-item">
+                    <span class="meta-label">Primary Email</span>
+                    <span class="meta-value"><a href="mailto:info@harrisonarbitrage.com" style="color: var(--accent-primary);">info@harrisonarbitrage.com</a></span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Secure Telephone</span>
+                    <span class="meta-value"><a href="tel:4439919896" style="color: var(--text-primary);">443-991-9896</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="mailto:info@harrisonarbitrage.com" class="btn btn-gold">Send Direct Email →</a>
+                <a href="tel:4439919896" class="btn btn-silver-outline">Call 443-991-9896</a>
+              </div>
+            </article>
+
+            <!-- Subsidiary Divisions Card -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>SUBSIDIARY PLATFORMS</span>
+                  <span class="card-badge-silver">Ecosystem Access</span>
+                </div>
+                <h3 class="card-title">Specialized Divisions</h3>
+                <p class="card-desc">
+                  For automated enterprise AI integration, custom agentic workflows, and specialized AI training:
+                </p>
+
+                <div class="meta-list" style="margin-top: 1.5rem;">
+                  <div class="meta-item">
+                    <span class="meta-label">Harrison AI Agents</span>
+                    <span class="meta-value"><a href="https://harrisonaiagents.com/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary);">harrisonaiagents.com ↗</a></span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">AI Agents Academy</span>
+                    <span class="meta-value"><a href="https://harrisonaiagents.com/academy/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary);">Academy Portal ↗</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="https://harrisonaiagents.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Visit Harrison AI Agents ↗</a>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h4 class="footer-col-title">Publishing Series</h4>
-          <ul class="footer-links">
-            <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
-            <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
-            <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
-            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Governance &amp; Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:info@harrisonarbitrage.com">info@harrisonarbitrage.com</a></li>
-            <li><a href="tel:4439919896">443-991-9896</a></li>
-            <li><a href="contact.html">Enterprise Inquiries</a></li>
-            <li><a href="privacy.html">Privacy &amp; Data Sovereignty</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>&copy; 2026 Harrison Arbitrage LLC. All Rights Reserved.</span>
-        <span>Information Sovereignty // Strategic Publishing // Enterprise Arbitrage</span>
-      </div>
-    </div>
-  </footer>
-
+      <!-- ==================== GLOBAL FOOTER CTA ==================== -->
+      <harrison-footer-cta></harrison-footer-cta>
+    </main>
+  </div>
 </body>
 </html>
