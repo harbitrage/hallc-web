@@ -9,130 +9,82 @@
   <script src="main.js" defer></script>
 </head>
 <body>
+  <div class="app-shell">
+    <harrison-sidebar></harrison-sidebar>
 
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <div class="logo-mark-wrap">
-          <img 
-            src="Harrison_Arbitrage_Dark.jpg" 
-            alt="Harrison Arbitrage LLC Crest" 
-            class="theme-brand-logo"
-            data-fallback-title="Harrison Arbitrage Crest"
-            data-asset-status="LIVE ASSET"
-          />
-        </div>
-        <div class="brand-text-group">
-          <span class="brand-name-main">Harrison Arbitrage</span>
-          <span class="brand-name-sub">Sovereignty // Strategy</span>
-        </div>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="index.html">Home</a>
-        <a href="publishing.html">Publishing</a>
-        <a href="spotlight.html" class="nav-spotlight-pill">Spotlight</a>
-        <a href="brands.html">Brands</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-
-      <div class="header-controls">
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Light/Dark Theme">
-          ☀️ Light Mode
-        </button>
-        <button id="view-mode-toggle" class="view-toggle-btn" type="button" aria-label="Toggle Mobile Center-Scroll View">
-          📱 Mobile View
-        </button>
-        <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation">
-          ☰ MENU
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ==================== HERO SECTION (9:16 Theme-Synced Crest Reel) ==================== -->
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="hero-kicker">Information Sovereignty Redefined.</span>
-          <h1 class="hero-title">
-            Architecting Mastery Across <span class="gold-accent">Strategy &amp; Manifestation.</span>
-          </h1>
-          <p class="hero-lead">
-            Welcome to Harrison Arbitrage LLC. We operate at the intersection of abstract boardroom strategy, enterprise governance, and high-impact physical and digital manifestation.
-          </p>
-
-          <div class="quote-banner">
-            "Sovereign intelligence framed. Strategic arbitrage deployed."
-          </div>
-
-          <div class="btn-group">
-            <a href="publishing.html" class="btn btn-gold">Explore Strategic Publishing →</a>
-            <a href="spotlight.html" class="btn btn-silver-outline">Current Spotlight: The Unlearning Dilemma</a>
-          </div>
-        </div>
-
-        <!-- Automatic Theme-Reactive 9:16 Animated Crest Video -->
-        <div>
-          <div class="asset-frame asset-frame-9x16">
-            <video 
-              class="theme-brand-video"
-              data-brand="arbitrage"
-              src="Harrison_Arbitrage_Dark_9x16_Animated.mp4"
-              poster="Harrison_Arbitrage_Dark_9x16.jpg"
-              autoplay
-              muted
-              loop
-              playsinline
-            ></video>
-          </div>
-          <p 
-            class="theme-status-caption"
-            data-caption-dark="HARRISON ARBITRAGE // DARK EDITION 9:16 REEL"
-            data-caption-light="HARRISON ARBITRAGE // LIGHT EDITION 9:16 REEL"
-          >
-            HARRISON ARBITRAGE // DARK EDITION 9:16 REEL
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== ROTATING BOOK SPOTLIGHT PREVIEW ==================== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Current Release Spotlight</span>
-          <h2 class="section-title">Featured Title: The Unlearning Dilemma</h2>
-          <p class="section-subtitle">
-            Why legacy institutional habits become existential liabilities in the era of autonomous intelligence—and how sovereign leaders dismantle outdated mental models before they fracture the enterprise.
-          </p>
-        </div>
-
-        <div class="spotlight-banner" data-collapsible-card>
-          <div class="asset-frame asset-frame-book">
-            <img 
-              src="Unlearning_Dilemma_Cover_2x3.jpg" 
-              alt="Book Cover for The Unlearning Dilemma"
-              data-fallback-title="The Unlearning Dilemma"
-              data-asset-status="2:3 COVER"
-            />
-          </div>
-
+    <main class="main-content">
+      <!-- ==================== HERO SECTION (9:16 Theme-Synced Crest Reel) ==================== -->
+      <section class="hero">
+        <div class="container hero-grid">
           <div>
-            <span class="card-badge">Featured Release // Active Campaign</span>
-            <h3 class="card-title" style="font-size: 1.95rem; margin-top: 14px;">
-              The Unlearning Dilemma
-            </h3>
+            <span class="hero-kicker">Information Sovereignty Redefined.</span>
+            <h1 class="hero-title">
+              Architecting Mastery Across <span class="gold-accent">Strategy &amp; Manifestation.</span>
+            </h1>
+            <p class="hero-lead">
+              Welcome to Harrison Arbitrage LLC. We operate at the intersection of abstract boardroom strategy, enterprise governance, and high-impact physical and digital manifestation.
+            </p>
 
-            <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-              <span>Collapse Details</span> <span>[−]</span>
-            </button>
+            <div class="quote-banner">
+              "Sovereign intelligence framed. Strategic arbitrage deployed."
+            </div>
 
-            <div class="collapsible-content">
+            <div class="btn-group">
+              <a href="publishing.html" class="btn btn-gold">Explore Strategic Publishing →</a>
+              <a href="spotlight.html" class="btn btn-silver-outline">Current Spotlight: The Unlearning Dilemma</a>
+            </div>
+          </div>
+
+          <!-- Automatic Theme-Reactive 9:16 Animated Crest Video -->
+          <div>
+            <div class="asset-frame asset-frame-9x16">
+              <video
+                class="theme-brand-video"
+                data-brand="arbitrage"
+                src="Harrison_Arbitrage_Dark_9x16_Animated.mp4"
+                poster="Harrison_Arbitrage_Dark_9x16.jpg"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+            <p
+              class="theme-status-caption"
+              data-caption-dark="HARRISON ARBITRAGE // DARK EDITION 9:16 REEL"
+              data-caption-light="HARRISON ARBITRAGE // LIGHT EDITION 9:16 REEL"
+            >
+              HARRISON ARBITRAGE // DARK EDITION 9:16 REEL
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ROTATING BOOK SPOTLIGHT PREVIEW ==================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Current Release Spotlight</span>
+            <h2 class="section-title">Featured Title: The Unlearning Dilemma</h2>
+            <p class="section-subtitle">
+              Why legacy institutional habits become existential liabilities in the era of autonomous intelligence—and how sovereign leaders dismantle outdated mental models before they fracture the enterprise.
+            </p>
+          </div>
+
+          <div class="spotlight-banner">
+            <div class="asset-frame asset-frame-book">
+              <img
+                src="Unlearning_Dilemma_Cover_2x3.jpg"
+                alt="Book Cover for The Unlearning Dilemma"
+              />
+            </div>
+
+            <div>
+              <span class="card-badge">Featured Release // Active Campaign</span>
+              <h3 class="card-title" style="font-size: 1.95rem; margin-top: 14px;">
+                The Unlearning Dilemma
+              </h3>
+
               <p class="card-desc">
                 Organizations rarely fail because they cannot acquire new tools; they fail because they graft next-generation intelligence onto obsolete governance assumptions. <strong>The Unlearning Dilemma</strong> delivers an executive framework for structural cognitive reset across boardroom leadership, cybersecurity posture, and operational delivery.
               </p>
@@ -151,220 +103,134 @@
                   <span class="meta-value">Kindle &amp; Paperback (Amazon)</span>
                 </div>
               </div>
-            </div>
 
-            <div class="btn-group">
-              <a href="spotlight.html" class="btn btn-gold">Enter Full Spotlight &amp; Campaign →</a>
-              <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">View Series on Amazon ↗</a>
+              <div class="btn-group">
+                <a href="spotlight.html" class="btn btn-gold">Enter Full Spotlight &amp; Campaign →</a>
+                <a href="https://www.amazon.com/gp/product/B0HP3SP2KS" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">Order Book on Amazon ↗</a>
+                <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">View Series on Amazon ↗</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==================== CORE PILLARS ==================== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Operational Architecture</span>
-          <h2 class="section-title">Core Strategic Pillars</h2>
-          <p class="section-subtitle">
-            Every enterprise initiative, published volume, and subsidiary brand under Harrison Arbitrage LLC is engineered around three foundational disciplines.
-          </p>
-        </div>
+      <!-- ==================== CORE PILLARS ==================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Operational Architecture</span>
+            <h2 class="section-title">Core Strategic Pillars</h2>
+            <p class="section-subtitle">
+              Every enterprise initiative, published volume, and subsidiary brand under Harrison Arbitrage LLC is engineered around three foundational disciplines.
+            </p>
+          </div>
 
-        <div class="grid-3">
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>PILLAR // 01</span>
-                <span class="card-badge-silver">Governance</span>
-              </div>
-              <h3 class="card-title">Information Sovereignty</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
+          <div class="grid-3">
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>PILLAR // 01</span>
+                  <span class="card-badge-silver">Governance</span>
+                </div>
+                <h3 class="card-title">Information Sovereignty</h3>
                 <p class="card-desc">
                   Establishing digital independence, zero-trust intellectual stewardship, and operational resilience in an increasingly volatile enterprise and national security landscape.
                 </p>
               </div>
-            </div>
-            <a href="about.html" class="link-arrow">Explore Our Mission →</a>
-          </article>
+              <a href="about.html" class="link-arrow">Explore Our Mission →</a>
+            </article>
 
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>PILLAR // 02</span>
-                <span class="card-badge">Publishing</span>
-              </div>
-              <h3 class="card-title">Strategic Publishing</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>PILLAR // 02</span>
+                  <span class="card-badge">Publishing</span>
+                </div>
+                <h3 class="card-title">Strategic Publishing</h3>
                 <p class="card-desc">
                   Bridging the historical divide between boardroom strategy, IT governance, hands-on risk management, and speculative systems inquiry through two flagship multi-volume series (7 published titles).
                 </p>
               </div>
-            </div>
-            <a href="publishing.html" class="link-arrow">Explore Publishing Hub →</a>
-          </article>
+              <a href="publishing.html" class="link-arrow">Explore Publishing Hub →</a>
+            </article>
 
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>PILLAR // 03</span>
-                <span class="card-badge-silver">Portfolio</span>
-              </div>
-              <h3 class="card-title">Multi-Domain Arbitrage</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>PILLAR // 03</span>
+                  <span class="card-badge-silver">Portfolio</span>
+                </div>
+                <h3 class="card-title">Multi-Domain Arbitrage</h3>
                 <p class="card-desc">
                   Uniting probabilistic enterprise AI deployment (Harrison AI Agents) with curated physical artifacts of historical significance (Harrison Collectibles).
                 </p>
               </div>
-            </div>
-            <a href="brands.html" class="link-arrow">Explore Brand Portfolio →</a>
-          </article>
+              <a href="brands.html" class="link-arrow">Explore Brand Portfolio →</a>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==================== SERIES OVERVIEW PREVIEW ==================== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Flagship Book Series</span>
-          <h2 class="section-title">Two Distinct Enquiries. One Sovereign Standard.</h2>
-          <p class="section-subtitle">
-            Select a series below to explore dedicated volume breakdowns, architectural themes, and direct Amazon acquisition links.
-          </p>
-        </div>
+      <!-- ==================== SERIES OVERVIEW PREVIEW ==================== -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Flagship Book Series</span>
+            <h2 class="section-title">Two Distinct Enquiries. One Sovereign Standard.</h2>
+            <p class="section-subtitle">
+              Select a series below to explore dedicated volume breakdowns, architectural themes, and direct Amazon acquisition links.
+            </p>
+          </div>
 
-        <div class="grid-2">
-          <!-- Series 1 Card -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>SERIES // 01</span>
-                <span class="card-badge">4 Volumes // Enterprise &amp; Risk</span>
-              </div>
-              <h3 class="card-title">AI, Cybersecurity and Resilience Series</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
+          <div class="grid-2">
+            <!-- Series 1 Card -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>SERIES // 01</span>
+                  <span class="card-badge">4 Volumes // Enterprise &amp; Risk</span>
+                </div>
+                <h3 class="card-title">AI, Cybersecurity and Resilience Series</h3>
                 <p class="card-desc">
                   Actionable playbooks for C-suite executives, program directors, and security architects navigating generative AI integration, SecMLOps, PMBOK®-aligned delivery, and enterprise cyber risk governance.
                 </p>
-                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-platinum);">
+                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">
                   Volumes: <em>The Unlearning Dilemma</em> • <em>The AI-Augmented Project Manager</em> • <em>The AI-Driven Enterprise</em> • <em>AI in the Trenches</em>
                 </p>
               </div>
-            </div>
-            <div class="btn-group" style="margin-top: 12px;">
-              <a href="series-ai-cybersecurity.html" class="btn btn-gold">Explore Series Page →</a>
-              <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">Amazon Series ↗</a>
-            </div>
-          </article>
-
-          <!-- Series 2 Card -->
-          <article class="enterprise-card" data-collapsible-card>
-            <div>
-              <div class="card-index">
-                <span>SERIES // 02</span>
-                <span class="card-badge-silver">3 Volumes // Speculative Systems</span>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="series-ai-cybersecurity.html" class="btn btn-gold">Explore Series Page →</a>
+                <a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">Amazon Series ↗</a>
               </div>
-              <h3 class="card-title">Substrate Simulation Series</h3>
-              <button type="button" class="collapse-toggle-btn" aria-expanded="true">
-                <span>Collapse Details</span> <span>[−]</span>
-              </button>
-              <div class="collapsible-content">
+            </article>
+
+            <!-- Series 2 Card -->
+            <article class="enterprise-card">
+              <div>
+                <div class="card-index">
+                  <span>SERIES // 02</span>
+                  <span class="card-badge-silver">3 Volumes // Speculative Systems</span>
+                </div>
+                <h3 class="card-title">Substrate Simulation Series</h3>
                 <p class="card-desc">
                   A rigorous, multi-installment exploration of memory architecture, synthetic reality, human agency, and the sovereign precipice where consciousness confronts the underlying substrate.
                 </p>
-                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-platinum);">
+                <p class="card-desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">
                   Volumes: <em>Project Mnemosyne</em> • <em>The Labyrinth, Part 1: The Sovereign Precipice</em> • <em>The Labyrinth, Part 2</em>
                 </p>
               </div>
-            </div>
-            <div class="btn-group" style="margin-top: 12px;">
-              <a href="series-substrate-simulation.html" class="btn btn-gold">Explore Series Page →</a>
-              <a href="https://www.amazon.com/dp/B0H9J2PXMG" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">Amazon Series ↗</a>
-            </div>
-          </article>
+              <div class="btn-group" style="margin-top: 12px;">
+                <a href="series-substrate-simulation.html" class="btn btn-gold">Explore Series Page →</a>
+                <a href="https://www.amazon.com/dp/B0H9J2PXMG" target="_blank" rel="noopener noreferrer" class="btn btn-silver-outline">Amazon Series ↗</a>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
-            <div class="logo-mark-wrap">
-              <img 
-                src="Harrison_Arbitrage_Dark.jpg" 
-                alt="Harrison Arbitrage LLC Crest" 
-                class="theme-brand-logo"
-                data-fallback-title="Harrison Arbitrage Crest"
-                data-asset-status="LIVE ASSET"
-              />
-            </div>
-            <div class="brand-text-group">
-              <span class="brand-name-main">Harrison Arbitrage LLC</span>
-              <span class="brand-name-sub">Maryland, USA // UTC -04:00</span>
-            </div>
-          </a>
-          <p class="card-desc" style="max-width: 360px;">
-            Operating at the intersection of abstract strategy and physical manifestation. Advancing Information Sovereignty across publishing, enterprise AI, and curated collectibles.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publishing.html">Publishing Hub</a></li>
-            <li><a href="spotlight.html">Current Spotlight</a></li>
-            <li><a href="brands.html">Family of Brands</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Publishing Series</h4>
-          <ul class="footer-links">
-            <li><a href="spotlight.html">The Unlearning Dilemma</a></li>
-            <li><a href="series-ai-cybersecurity.html">AI, Cybersecurity &amp; Resilience</a></li>
-            <li><a href="series-substrate-simulation.html">Substrate Simulation Series</a></li>
-            <li><a href="https://www.amazon.com/dp/B0HF5N1DVW" target="_blank" rel="noopener noreferrer">Amazon Author Catalog ↗</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Governance &amp; Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:info@harrisonarbitrage.com">info@harrisonarbitrage.com</a></li>
-            <li><a href="tel:4439919896">443-991-9896</a></li>
-            <li><a href="contact.html">Enterprise Inquiries</a></li>
-            <li><a href="privacy.html">Privacy &amp; Data Sovereignty</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>&copy; 2026 Harrison Arbitrage LLC. All Rights Reserved.</span>
-        <span>Information Sovereignty // Strategic Publishing // Enterprise Arbitrage</span>
-      </div>
-    </div>
-  </footer>
-
+      <!-- ==================== GLOBAL FOOTER CTA ==================== -->
+      <harrison-footer-cta></harrison-footer-cta>
+    </main>
+  </div>
 </body>
 </html>
